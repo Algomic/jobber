@@ -1,0 +1,9 @@
+MetaTrader5
+pandas
+numpy
+matplotlib
+ta
+scikit-learn
+pytz
+colorama
+uuid
