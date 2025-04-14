@@ -8,6 +8,11 @@ import time
 import os
 from BOT.account.setup import open_platfrom, login
 from dotenv import load_dotenv
+from logger_setup import logger
+
+logger.info("Starting the app...")
+logger.warning("This might be risky.")
+logger.critical("This is a heavy duty program !!!")
 
 
 
@@ -22,15 +27,15 @@ SERVER = os.getenv("SERVER")
 STARTING_BAL = int(os.getenv("STARTING_BAL"))
 # NAME = os.getenv("NAME")
 
-print(f"LOGIN: {LOGIN} PASSWORD: {PASSWORD} SERVER: {SERVER}") #PASSWORD: {PASSWORD} SERVER: {SERVER}"
+# print(f"LOGIN: {LOGIN} PASSWORD: {PASSWORD} SERVER: {SERVER}") #PASSWORD: {PASSWORD} SERVER: {SERVER}"
 
 # Setup and login into trading account.
 # Open MT5 Trading Platform
 open_platfrom(LOGIN, PASSWORD, SERVER)
-print("finished running open_platform")
+logger.info("Terminal successfully initiated.")
 # Login to trading account
 login(ACCOUNT, PASSWORD, SERVER)
-print("finished running login")
+logger.info("Successfully logged in.")
 
 
 

@@ -1,6 +1,6 @@
 import MetaTrader5 as mt5
 from BOT.orders.position import initial_pos, close_partial_position
-
+from logger_setup import logger
 def create_request_packet(symbol, lot, signal_data, trade_type):
     """
     Creates a request packet for an order.
@@ -46,9 +46,9 @@ def send_order(symbol, lot, signal_data, trade_type, open_trades, signal_lock, u
         open_trades[symbol] += 1
         with signal_lock:
             used_signals.add(signal_data["Signal ID"])
-        print(f"Trade successful for {symbol}. Signal ID {signal_data['Signal ID']} marked as used.")
+        logger.info(f"Trade successful for {symbol}. Signal ID {signal_data['Signal ID']} marked as used.")
     else:
-        print(f"Order failed, retcode={result.retcode}")
+        logger.error(f"Order failed, retcode={result.retcode}")
 
 def orders(symbol, signal_data, open_trades, signal_lock, used_signals):
     """

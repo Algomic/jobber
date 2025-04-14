@@ -8,6 +8,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import TimeSeriesSplit
 import ta  # Technical Analysis library for RSI calculation
 import threading
+from logger_setup import logger
 
 def fetch_and_store_data(symbol, timeframe):
     # fetch historical data
@@ -97,7 +98,7 @@ def build_and_evaluate_model(data_fetcher, timeframes, rsi_period=14, n_splits=5
         accuracies.append(accuracy)
 
     mean_accuracy = np.mean(accuracies)
-    print(f"Mean accuracy: {mean_accuracy:.2f}")
+    logger.info(f"Mean accuracy: {mean_accuracy:.2f}")
 
     return model, mean_accuracy # calculate_indicators_and_trend
 
@@ -121,10 +122,10 @@ def build_models_for_assets(asset_data_fetchers, timeframes, rsi_period=14, n_sp
 
     def process_asset(asset, fetcher):
         # global trends
-        print(f"Starting model build for {asset}...")
+        logger.info(f"Starting model build for {asset}...")
         model, accuracy = build_and_evaluate_model(fetcher, timeframes, n_splits)
         results[asset] = {"model": model, "accuracy": accuracy}
-        print(f"Completed model for {asset}: Accuracy = {accuracy:.2f}")
+        logger.info(f"Completed model for {asset}: Accuracy = {accuracy:.2f}")
 
         # return trends
 
@@ -201,10 +202,10 @@ def make_prediction(recent_data_df, model):
     #     # "EURUSD": lambda: fetch_and_store_data("Jump 100 Index", mt5.TIMEFRAME_D1)
     # }
 
-    # Initialize MetaTrader5
-    if not mt5.initialize():
-        print("MetaTrader5 initialization failed")
-        quit()
+    # # Initialize MetaTrader5
+    # if not mt5.initialize():
+    #     print("MetaTrader5 initialization failed")
+    #     quit()
 
     # Build and evaluate models for all assets
     # models = build_models_for_assets(config.asset_data_fetchers, timeframes)

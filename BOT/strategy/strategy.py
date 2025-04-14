@@ -3,7 +3,7 @@ import uuid
 import ta
 import MetaTrader5 as mt5
 from BOT.models.model import fetch_current_data, prepare_latest_data, make_prediction, calculate_indicators_and_trend
-
+from logger_setup import logger
 # import models 
 
 # timeframes = {'D': 20, '4h': 80, '1h': 240, '15min': 960}
@@ -135,8 +135,8 @@ def signal(fetch_data, asset, timeframe, trend_decision, count): #
         signals = generate_signals(plus_rsi_atr_data, asset, trend_decision)
         return signals[-1] if signals else None
     except IndexError as e:
-        print(f"Index error encountered: {e}")
+        logger.error(f"Index error encountered: {e}")
         return None
     except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+        logger.error(f"An unexpected error occurred: {e}")
         return None

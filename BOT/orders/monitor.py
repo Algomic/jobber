@@ -40,6 +40,7 @@ import MetaTrader5 as mt5
 import pandas as pd
 from BOT.orders.request import orders
 from config import config
+from logger_setup import logger
 
 # Global variables to manage state
 used_signals = {}  # Tracks used signals per asset
@@ -81,7 +82,7 @@ def update_open_trades():
     # Update global open_trades dictionary
     global open_trades
     open_trades = current_open_trades
-    print(f"Updated open trades: {open_trades}")
+    logger.info(f"Updated open trades: {open_trades}")
 
 def is_signal_date_valid(signal_time, tolerance_minutes=2):
     """
@@ -96,7 +97,7 @@ def timing_decorator(func):
         start_time = time.time()  # Start time before calling the function
         result = func(*args, **kwargs)
         end_time = time.time()    # End time after calling the function
-        print(f"{func.__name__} took {end_time - start_time:.4f} seconds")
+        logger.info(f"{func.__name__} ran for {end_time - start_time:.4f} seconds")
         return result
     return wrapper
 
@@ -130,10 +131,10 @@ def monitor_asset(models, session_ON=True, max_open_trades=3, wake = 2):
 
                 if is_time_to_check(): 
                     update_open_trades()
-                    print(f"Open trades updated for {asset}")
+                    logger.info(f"Open trades updated for {asset}")
 
                     if open_trades.get(asset, 0) >= max_open_trades:
-                        print(f"Max open trades reached for {asset}. Skipping.")
+                        logger.warning(f"Max open trades reached for {asset}. Skipping.")
                         continue
 
                     signal_id = signal["Signal ID"]
@@ -141,7 +142,7 @@ def monitor_asset(models, session_ON=True, max_open_trades=3, wake = 2):
 
                     with signal_lock:
                         if signal_id in used_signals[asset]:
-                            print(f"Signal {signal_id} already used for {asset}. Skipping.")
+                            logger.warning(f"Signal {signal_id} already used for {asset}. Skipping.")
                             continue
 #                         used_signals[asset].add(signal_id)
 
@@ -152,10 +153,10 @@ def monitor_asset(models, session_ON=True, max_open_trades=3, wake = 2):
 #                             open_trades[asset] += 1
 #                             print(f"Order executed for {asset}")
                         else:
-                            print(f"Signal time {signal_time} is not valid for {asset}. Skipping.")
+                            logger.warning(f"Signal time {signal_time} is not valid for {asset}. Skipping.")
                             
                     except Exception as e:
-                        print(f"Failed to execute order for {asset}: {e}")
+                        logger.error(f"Failed to execute order for {asset}: {e}")
 
             # current_time = datetime.now()
             # next_check = (current_time // 120 + 1) * 120
@@ -164,7 +165,7 @@ def monitor_asset(models, session_ON=True, max_open_trades=3, wake = 2):
             # time.sleep(1)
 
         except KeyboardInterrupt:
-            print("Shutting down monitor...")
+            logger.info("Shutting down monitor...")
             session_ON = False
         except Exception as e:
-            print(f"Unexpected error: {e}")
+            logger.fatal(f"Unexpected error: {e}")

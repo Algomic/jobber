@@ -1,5 +1,6 @@
 import math
 import MetaTrader5 as mt5
+from logger_setup import logger
 
 def position_size(asset, asset_present_volatility, starting_bal, step_size= 0.02, initial_lot= 0.05, lot_increment = 0.01, max_multiplier= 1.5):
     asset_max_volatility = {'Jump 100 Index': 15, 'Step Index': 5, 'Crash 500 Index': 8, 'Boom 500 Index': 12, 
@@ -48,7 +49,7 @@ def close_partial_position(symbol, volume_to_close):
     positions = mt5.positions_get(symbol=symbol)
     
     if not positions:
-        print(f"No open positions found for {symbol}.")
+        logger.warning(f"No open positions found for {symbol}.")
         return False
 
     # Process each position
@@ -59,7 +60,7 @@ def close_partial_position(symbol, volume_to_close):
 
         # Ensure there's enough volume to close
         if volume_to_close > open_volume:
-            print(f"Requested close volume ({volume_to_close}) exceeds open volume ({open_volume}). Skipping.")
+            logger.warning(f"Requested close volume ({volume_to_close}) exceeds open volume ({open_volume}). Skipping.")
             continue
 
         # Determine trade action based on position type
@@ -68,7 +69,7 @@ def close_partial_position(symbol, volume_to_close):
         elif position.type == mt5.ORDER_TYPE_SELL:
             action = mt5.ORDER_BUY
         else:
-            print(f"Unknown position type for ticket {ticket}. Skipping.")
+            logger.warning(f"Unknown position type for ticket {ticket}. Skipping.")
             continue
 
         # Prepare the close request
@@ -86,11 +87,11 @@ def close_partial_position(symbol, volume_to_close):
         # Send the trade request
         result = mt5.order_send(request)
         if result.retcode != mt5.TRADE_RETCODE_DONE:
-            print(f"Failed to close partial position for {symbol}. Error: {result.comment}")
+            logger.error(f"Failed to close partial position for {symbol}. Error: {result.comment}")
             return False
 
-        print(f"Successfully closed {volume_to_close} lots of {symbol} position.")
+        logger.info(f"Successfully closed {volume_to_close} lots of {symbol} position.")
         return True  # Exit after handling one position
 
-    print(f"No matching positions for partial closure on {symbol}.")
+    logger.warning(f"No matching positions for partial closure on {symbol}.")
     return False
