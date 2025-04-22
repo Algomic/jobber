@@ -1,4 +1,4 @@
-# # logger_setup.py
+# # # # logger_setup.py
 # import logging
 # import os
 # from datetime import datetime
@@ -39,53 +39,174 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # logger_setup.py
+# import logging
+# import os
+# from datetime import datetime
+
+# # Ensure logs folder exists
+# os.makedirs("logs", exist_ok=True)
+
+# class DeduplicationFilter(logging.Filter):
+#     def __init__(self):
+#         super().__init__()
+#         self.logged_messages = set()
+
+#     def filter(self, record):
+#         message_body = record.getMessage()  # This strips out timestamp/level
+#         if message_body in self.logged_messages:
+#             return False  # Skip duplicate
+#         self.logged_messages.add(message_body)
+#         return True  # Allow log
+
+
+# utc_now = datetime.now(timezone.utc)
+
+# log_filename = f"logs/log_{utc_now.strftime('%Y-%m-%d')}.log"
+
+# # Create formatter
+# formatter = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s')
+
+# # Create handlers
+# file_handler = logging.FileHandler(log_filename)
+# file_handler.setFormatter(formatter)
+# file_handler.addFilter(DeduplicationFilter())
+
+# app_log_handler = logging.FileHandler("logs/app.log")
+# app_log_handler.setFormatter(formatter)
+# app_log_handler.addFilter(DeduplicationFilter())
+
+# # Optional: Add console handler if needed
+# # stream_handler = logging.StreamHandler()
+# # stream_handler.setFormatter(formatter)
+
+# # Configure logging
+# logging.basicConfig(
+#     level=logging.INFO,
+#     handlers=[
+#         file_handler,
+#         app_log_handler,
+#         # stream_handler
+#     ]
+# )
+
+# # Create your logger
+# logger = logging.getLogger("algo_logger")
+
+
+# ################################################################################################
+# ###########EU daylight saving (correct auto-switch)	Europe/Berlin or Europe/Paris or Europe/Rome etc
+# ################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import logging
 import os
-from datetime import datetime
+import time
+from datetime import datetime, timezone
+
+# --- Custom Formatter forcing UTC timestamps ---
+class UTCFormatter(logging.Formatter):
+    converter = time.gmtime
 
 # Ensure logs folder exists
 os.makedirs("logs", exist_ok=True)
 
+# --- Setup format ---
+log_format = '[%(asctime)s] [%(levelname)s] %(message)s'
+
+# --- File Handlers (UTC) ---
+log_filename = f"logs/log_{datetime.now(timezone.utc).strftime('%Y-%m-%d')}.log"
+file_handler = logging.FileHandler(log_filename)
+file_handler.setFormatter(UTCFormatter(log_format))
+
+app_log_handler = logging.FileHandler("logs/app.log")
+app_log_handler.setFormatter(UTCFormatter(log_format))
+
+# --- Console Handler (Local time) ---
+stream_handler = logging.StreamHandler()
+stream_handler.setFormatter(logging.Formatter(log_format))  # default: local time
+
+# --- Configure Logging ---
+logging.basicConfig(
+    level=logging.INFO,
+    handlers=[
+        file_handler,
+        app_log_handler,
+        stream_handler
+    ]
+)
+
+# --- Optional: Deduplication Filter ---
 class DeduplicationFilter(logging.Filter):
     def __init__(self):
         super().__init__()
         self.logged_messages = set()
 
     def filter(self, record):
-        message_body = record.getMessage()  # This strips out timestamp/level
+        message_body = record.getMessage()
         if message_body in self.logged_messages:
-            return False  # Skip duplicate
+            return False
         self.logged_messages.add(message_body)
-        return True  # Allow log
+        return True
 
-log_filename = f"logs/log_{datetime.now().strftime('%Y-%m-%d')}.log"
+# Attach the deduplication filter to handlers
+dedup_filter = DeduplicationFilter()
+file_handler.addFilter(dedup_filter)
+app_log_handler.addFilter(dedup_filter)
 
-# Create formatter
-formatter = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s')
-
-# Create handlers
-file_handler = logging.FileHandler(log_filename)
-file_handler.setFormatter(formatter)
-file_handler.addFilter(DeduplicationFilter())
-
-app_log_handler = logging.FileHandler("logs/app.log")
-app_log_handler.setFormatter(formatter)
-app_log_handler.addFilter(DeduplicationFilter())
-
-# Optional: Add console handler if needed
-# stream_handler = logging.StreamHandler()
-# stream_handler.setFormatter(formatter)
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    handlers=[
-        file_handler,
-        app_log_handler,
-        # stream_handler
-    ]
-)
-
-# Create your logger
+# --- Create logger ---
 logger = logging.getLogger("algo_logger")
+
+# # --- Example usage ---
+# if __name__ == "__main__":
+#     logger.info("Test log entry.")

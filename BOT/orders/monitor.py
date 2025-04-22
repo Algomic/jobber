@@ -33,7 +33,7 @@
 
 import time
 import threading
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from BOT.strategy.strategy import signal
 from BOT.models.model import fetch_current_data, prepare_latest_data, make_prediction
 import MetaTrader5 as mt5
@@ -88,7 +88,7 @@ def is_signal_date_valid(signal_time, tolerance_minutes=2):
     """
     Checks if the signal time is within the tolerance window.
     """
-    now = datetime.now()
+    now = datetime.now(timezone.utc)
     signal_date = pd.Timestamp(signal_time).to_pydatetime()
     return now - timedelta(minutes=tolerance_minutes) <= signal_date <= now + timedelta(minutes=tolerance_minutes)
 
@@ -106,7 +106,7 @@ def monitor_asset(models, session_ON=True, max_open_trades=3, wake = 2):
     """Function to monitor assets and process signals."""
     def is_time_to_check():
         """Checks if the current time is aligned with the 2-minute interval."""
-        now = datetime.now()
+        now = datetime.now(timezone.utc)
         return now.minute % 15 == 0 and now.second < 60  # Allow a 2-second window
 
     while session_ON:
