@@ -41,6 +41,14 @@ import pandas as pd
 from BOT.orders.request import orders
 from config import config
 from logger_setup import logger
+import asyncio
+from aiogram import Bot, Dispatcher, html
+from telegram_update import send_trade_signal
+import sqlite3
+from telegram_bot import bot
+import asyncio
+
+
 
 # Global variables to manage state
 used_signals = {}  # Tracks used signals per asset
@@ -58,7 +66,7 @@ def sig(models):
         trend_decision = make_prediction(prepared_data, model)
         # print(f'{asset}: trend_decision: {trend_decision}' )
         # market_signal[asset] = trend_decision          
-        asset_signal[asset] = signal(fetch_data, asset, mt5.TIMEFRAME_M15, trend_decision, 300) # 
+        asset_signal[asset] = signal(fetch_data, asset, trend_decision) # signal(fetch_data, asset, mt5.TIMEFRAME_M15, trend_decision, 300)
     return asset_signal
 
 def update_open_trades():
@@ -92,6 +100,23 @@ def is_signal_date_valid(signal_time, tolerance_minutes=2):
     signal_date = pd.Timestamp(signal_time, tz='UTC').to_pydatetime()
     return now - timedelta(minutes=tolerance_minutes) <= signal_date <= now + timedelta(minutes=tolerance_minutes)
 
+
+conn = sqlite3.connect("subscribers.db")
+cursor = conn.cursor()
+
+def get_subscribers():
+    cursor.execute("SELECT chat_id FROM subscribers")
+    return [row[0] for row in cursor.fetchall()]
+
+def send_trade_signal_sync(signal_message, loop):
+    subscribers = get_subscribers()
+    for chat_id in subscribers:
+        asyncio.run_coroutine_threadsafe(
+            bot.send_message(chat_id=chat_id, text=signal_message),
+            loop
+        )
+
+
 def timing_decorator(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()  # Start time before calling the function
@@ -102,7 +127,7 @@ def timing_decorator(func):
     return wrapper
 
 @timing_decorator
-def monitor_asset(models, session_ON=True, max_open_trades=3, wake = 2):
+def monitor_asset(models, bot, loop, session_ON=True, max_open_trades=3, wake=2):
     """Function to monitor assets and process signals."""
     def is_time_to_check():
         """Checks if the current time is aligned with the 2-minute interval."""
@@ -149,9 +174,26 @@ def monitor_asset(models, session_ON=True, max_open_trades=3, wake = 2):
                     try:
                         if is_signal_date_valid(signal_time):
                             orders(asset, signal, open_trades, signal_lock, used_signals)
+
 #                             used_signals[asset].add(signal_id)
 #                             open_trades[asset] += 1
 #                             print(f"Order executed for {asset}")
+
+                            # Send Telegram notification
+                            signal_message = (
+                                f"📢 Trade Signal\n"
+                                f"Asset: {signal['Asset']}\n"
+                                f"Trend: {signal['Trend']}\n"
+                                f"Entry: {signal['Entry Price']}\n"
+                                f"SL: {signal['Stop Loss']}\n"
+                                f"TP: {signal['Take Profit']}\n"
+                                f"Signal ID: {signal['Signal ID']}"
+                            )
+
+                            send_trade_signal_sync(signal_message, loop)
+
+
+                            
                         else:
                             logger.warning(f"Signal time {signal_time} is not valid for {asset}. Skipping.")
                             

@@ -6,9 +6,18 @@ from BOT.orders.monitor import monitor_asset
 import threading
 import time
 import os
+import sys
 from BOT.account.setup import open_platfrom, login
 from dotenv import load_dotenv
 from logger_setup import logger
+# from telegram_update import jobber_telegram_bot
+from telegram_bot import bot, jobber_telegram_bot, periodic_cache_refresh
+import asyncio
+import signal
+
+
+
+
 
 logger.info("Starting the app...")
 logger.warning("This might be risky.")
@@ -25,9 +34,6 @@ LOGIN = int(os.getenv("LOGIN"))
 PASSWORD = os.getenv("PASSWORD")
 SERVER = os.getenv("SERVER")
 STARTING_BAL = int(os.getenv("STARTING_BAL"))
-# NAME = os.getenv("NAME")
-
-# print(f"LOGIN: {LOGIN} PASSWORD: {PASSWORD} SERVER: {SERVER}") #PASSWORD: {PASSWORD} SERVER: {SERVER}"
 
 # Setup and login into trading account.
 # Open MT5 Trading Platform
@@ -38,38 +44,55 @@ login(ACCOUNT, PASSWORD, SERVER)
 logger.info("Successfully logged in.")
 
 
-
-# config = {
-#             "timeframes" : {'D': 20, '4h': 80, '1h': 240, '15min': 960},
-#             "asset_data_fetchers" : {
-#                     "Boom 1000 Index": lambda: fetch_and_store_data("Boom 1000 Index", mt5.TIMEFRAME_D1),
-#                     "Boom 500 Index": lambda: fetch_and_store_data("Boom 500 Index", mt5.TIMEFRAME_D1),
-#                     "Crash 1000 Index": lambda: fetch_and_store_data("Crash 1000 Index", mt5.TIMEFRAME_D1),
-#                     "Crash 500 Index": lambda: fetch_and_store_data("Crash 500 Index", mt5.TIMEFRAME_D1),
-#                     "Step Index": lambda: fetch_and_store_data("Step Index", mt5.TIMEFRAME_D1),
-#                     "Jump 100 Index": lambda: fetch_and_store_data("Jump 100 Index", mt5.TIMEFRAME_D1)
-    
-#             }
-
-# }
-
-# Initialize MetaTrader5
-if not mt5.initialize():
-    print("MetaTrader5 initialization failed")
-    quit()
-
 # Build and evaluate models for all assets
 models = build_models_for_assets(config["asset_data_fetchers"], config["timeframes"])
 
-
-# Thread
-thread = threading.Thread(target=monitor_asset(models), daemon=True) #args=(asset, signal) update_open_trades
-    # threads.append(thread)
-thread.start()
+def monitor_asset_sync(models, bot, loop): 
+    # your existing monitor logic
+    thread = threading.Thread(target=monitor_asset(models, bot, loop), daemon=True) #args=(asset, signal) update_open_trades
+    # thread.append(thread)
+    thread.start()
 
     # Keep the main program running
-try:
-    while thread.is_alive():
-        time.sleep(15*60)  # Keep checking if the thread is alive
-except KeyboardInterrupt:
-    print("Shutting down...")
+    try:
+        while thread.is_alive():
+            time.sleep(15*60)  # Keep checking if the thread is alive
+            SystemExit
+    except KeyboardInterrupt:
+        logger.info("Shutting down...")
+      
+
+
+
+
+# signal.signal(signal.SIGINT)
+
+async def main():
+    loop = asyncio.get_running_loop()
+    # 1) offload monitor_asset to a background thread
+    loop.run_in_executor(None, monitor_asset_sync, models, bot, loop)
+
+    # 2) Start periodic cache refresh (optional)
+    asyncio.create_task(periodic_cache_refresh())
+
+    # 3) run the Telegram bot forever
+    await jobber_telegram_bot()
+
+
+
+# Keyboard Interruption 
+# interrupt_count = 0
+
+# def handler(signum, frame):
+#     global interrupt_count
+#     interrupt_count += 1
+#     if interrupt_count == 1:
+#         print("\n(Press Ctrl-C again to quit.)")
+#     else:
+#         print("\nExiting on second Ctrl-C.")
+#         sys.exit(0)
+
+# signal.signal(signal.SIGINT, handler)
+
+if __name__ == "__main__":
+    asyncio.run(main())

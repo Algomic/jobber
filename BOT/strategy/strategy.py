@@ -4,7 +4,7 @@ import ta
 import MetaTrader5 as mt5
 from BOT.models.model import fetch_current_data, prepare_latest_data, make_prediction, calculate_indicators_and_trend
 from logger_setup import logger
-# import models 
+# import config
 
 # timeframes = {'D': 20, '4h': 80, '1h': 240, '15min': 960}
 
@@ -113,7 +113,7 @@ def generate_signals(data, asset, trend_decision):
 
 
 
-def signal(fetch_data, asset, timeframe, trend_decision, count): # 
+def signal(fetch_data, asset, trend_decision): # signal(fetch_data, asset, timeframe, trend_decision, count)
     """
     Generates the most recent signal for the given asset and data.
 

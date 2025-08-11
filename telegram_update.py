@@ -11,6 +11,7 @@ from aiogram.types import Message
 
 # Bot token can be obtained via https://t.me/BotFather
 TOKEN = getenv("JOBBAH_BOT_TOKEN")
+# print(TOKEN)
 
 # All handlers should be attached to the Router (or Dispatcher)
 
@@ -44,15 +45,20 @@ async def echo_handler(message: Message) -> None:
         # But not all the types is supported to be copied so need to handle it
         await message.answer("Nice try!")
 
+# Send Trade Signal to the group/specific user
+async def send_trade_signal(bot: Bot, chat_id: int, signal_text: str):
+    await bot.send_message(chat_id, signal_text)
 
-async def main() -> None:
+
+
+async def jobber_telegram_bot() -> None:
     # Initialize Bot instance with default bot properties which will be passed to all API calls
     bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
     # And the run events dispatching
-    await dp.start_polling(bot)
+    await dp.start_polling(bot) #skip_updates=True
 
 
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO, stream=sys.stdout)
-    asyncio.run(main())
+# if __name__ == "__main__":
+    # logging.basicConfig(level=logging.INFO, stream=sys.stdout)
+    # asyncio.run(jobber_telegram_bot())

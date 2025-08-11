@@ -35,7 +35,7 @@ def calculate_indicators_and_trend(data,  rsi_period=14):
         return data 
 
 
-def build_and_evaluate_model(data_fetcher, timeframes, rsi_period=14, n_splits=5):
+def build_and_evaluate_model(data_fetcher, timeframes, n_splits=5): #build_and_evaluate_model(data_fetcher, timeframes, rsi_period=14, n_splits=5)
     """
     Builds a trading model using technical indicators and evaluates it with walk-forward validation.
 

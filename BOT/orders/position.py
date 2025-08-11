@@ -2,14 +2,15 @@ import math
 import MetaTrader5 as mt5
 from logger_setup import logger
 
-def position_size(asset, asset_present_volatility, starting_bal, step_size= 0.02, initial_lot= 0.05, lot_increment = 0.01, max_multiplier= 1.5):
+def position_size(asset, asset_present_volatility, step_size= 0.02, initial_lot= 0.05, lot_increment = 0.01, max_multiplier= 1.5):
+    account_equity_balance = mt5.account_info()._asdict()["equity"]
     asset_max_volatility = {'Jump 100 Index': 15, 'Step Index': 5, 'Crash 500 Index': 8, 'Boom 500 Index': 12, 
     'Boom 1000 Index': 21, 'Crash 1000 Index': 7}
     free_margin = mt5.account_info()._asdict()["margin_free"]
-    if free_margin < starting_bal:
+    if free_margin < account_equity_balance:
         base_position = initial_lot
     else:
-        step_count = (free_margin - 100) // step_size
+        step_count = (free_margin - account_equity_balance) // step_size # (free_margin - 100) // step_size
         base_position = initial_lot + (step_count * lot_increment)
         
     adjustment_factor = asset_max_volatility[asset] / asset_present_volatility
