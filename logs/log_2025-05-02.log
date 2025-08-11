@@ -1,0 +1,44 @@
+[2025-05-02 13:01:26,710] [INFO] Starting the app...
+[2025-05-02 13:01:26,711] [WARNING] This might be risky.
+[2025-05-02 13:01:26,711] [CRITICAL] This is a heavy duty program !!!
+[2025-05-02 13:01:32,497] [INFO] Mt5 terminal initiated successfully!. 
+[2025-05-02 13:01:32,499] [INFO] Terminal successfully initiated.
+[2025-05-02 13:01:32,503] [INFO] Account Details
+Login: 40477972
+[2025-05-02 13:01:32,504] [INFO] Balance: 14821.02
+[2025-05-02 13:01:32,505] [INFO] Name: Olalekan Demo Standard
+[2025-05-02 13:01:32,506] [INFO] Successfully logged in.
+[2025-05-02 13:01:32,508] [INFO] Starting model build for Boom 1000 Index...
+[2025-05-02 13:01:34,093] [INFO] Starting model build for Boom 500 Index...
+[2025-05-02 13:01:34,124] [INFO] Starting model build for Crash 1000 Index...
+[2025-05-02 13:01:34,217] [INFO] Starting model build for Crash 500 Index...
+[2025-05-02 13:01:34,231] [INFO] Starting model build for Step Index...
+[2025-05-02 13:01:34,248] [INFO] Starting model build for Jump 100 Index...
+[2025-05-02 13:01:38,731] [INFO] Mean accuracy: 0.95
+[2025-05-02 13:01:38,733] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-05-02 13:01:39,304] [INFO] Mean accuracy: 0.97
+[2025-05-02 13:01:39,304] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-05-02 13:01:39,324] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-05-02 13:01:39,333] [INFO] Mean accuracy: 0.93
+[2025-05-02 13:01:39,335] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.93
+[2025-05-02 13:01:39,341] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-05-02 13:01:39,344] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-05-02 13:01:39,947] [INFO] Start polling
+[2025-05-02 13:01:40,362] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-05-02 13:12:59,476] [INFO] Update id=207208248 is handled. Duration 905 ms by bot id=7426056292
+[2025-05-02 13:15:00,184] [INFO] Updated open trades: {'EURUSD': 1, 'Crash 500 Index': 1}
+[2025-05-02 13:15:00,187] [INFO] Open trades updated for Jump 100 Index
+[2025-05-02 13:15:00,189] [WARNING] Signal time 2025-05-02 12:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-05-02 13:15:00,190] [INFO] Open trades updated for Step Index
+[2025-05-02 13:15:00,190] [WARNING] Signal time 2025-04-30 23:15:00 is not valid for Step Index. Skipping.
+[2025-05-02 13:15:00,191] [INFO] Open trades updated for Crash 1000 Index
+[2025-05-02 13:15:00,191] [WARNING] Signal time 2025-05-01 23:30:00 is not valid for Crash 1000 Index. Skipping.
+[2025-05-02 13:15:00,192] [INFO] Open trades updated for Crash 500 Index
+[2025-05-02 13:15:00,192] [WARNING] Signal time 2025-05-02 11:00:00 is not valid for Crash 500 Index. Skipping.
+[2025-05-02 14:15:00,108] [INFO] Updated open trades: {}
+[2025-05-02 17:34:38,362] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-05-02 17:34:38,373] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-05-02 17:34:50,549] [INFO] Connection established (tryings = 1, bot id = 7426056292)
+[2025-05-02 17:36:39,961] [INFO] Update id=207208249 is handled. Duration 1327 ms by bot id=7426056292
+[2025-05-02 18:06:50,564] [INFO] Polling stopped
+[2025-05-02 18:06:50,956] [INFO] Polling stopped for bot @jobbah_bot id=7426056292 - 'jobber'

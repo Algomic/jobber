@@ -1,0 +1,122 @@
+[2025-08-11 19:20:25,287] [INFO] Subscriber cache loaded: 0 users
+[2025-08-11 19:20:25,318] [INFO] Starting the app...
+[2025-08-11 19:20:25,319] [WARNING] This might be risky.
+[2025-08-11 19:20:25,319] [CRITICAL] This is a heavy duty program !!!
+[2025-08-11 19:20:33,092] [INFO] Mt5 terminal initiated successfully!. 
+[2025-08-11 19:20:33,094] [INFO] Terminal successfully initiated.
+[2025-08-11 19:20:33,096] [INFO] Account Details
+Login: 40761020
+[2025-08-11 19:20:33,096] [INFO] Balance: 10000.0
+[2025-08-11 19:20:33,096] [INFO] Name: Olalekan Demo Standard
+[2025-08-11 19:20:33,097] [INFO] Successfully logged in.
+[2025-08-11 19:20:33,098] [INFO] Starting model build for Boom 1000 Index...
+[2025-08-11 19:20:34,998] [INFO] Starting model build for Boom 500 Index...
+[2025-08-11 19:20:35,045] [INFO] Starting model build for Crash 1000 Index...
+[2025-08-11 19:20:36,812] [INFO] Starting model build for Crash 500 Index...
+[2025-08-11 19:20:37,871] [INFO] Starting model build for Step Index...
+[2025-08-11 19:20:37,912] [INFO] Starting model build for Jump 100 Index...
+[2025-08-11 19:20:53,370] [INFO] Mean accuracy: 0.95
+[2025-08-11 19:20:53,373] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-08-11 19:20:54,772] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-08-11 19:20:54,863] [INFO] Mean accuracy: 0.97
+[2025-08-11 19:20:54,865] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-08-11 19:20:54,869] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-08-11 19:20:54,928] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-08-11 19:20:54,937] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.95
+[2025-08-11 19:20:54,951] [INFO] Start polling
+[2025-08-11 19:20:54,953] [INFO] Subscriber cache refreshed
+[2025-08-11 19:20:54,961] [ERROR] Future exception was never retrieved
+future: <Future finished exception=TypeError('monitor_asset_sync() takes 1 positional argument but 3 were given')>
+Traceback (most recent call last):
+  File "C:\Users\solom\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: monitor_asset_sync() takes 1 positional argument but 3 were given
+[2025-08-11 19:20:58,147] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-08-11 19:28:20,271] [INFO] Polling stopped
+[2025-08-11 19:28:20,643] [INFO] Polling stopped for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-08-11 19:28:55,832] [INFO] Subscriber cache loaded: 0 users
+[2025-08-11 19:28:55,882] [INFO] Starting the app...
+[2025-08-11 19:28:55,883] [WARNING] This might be risky.
+[2025-08-11 19:28:55,883] [CRITICAL] This is a heavy duty program !!!
+[2025-08-11 19:28:55,978] [INFO] Mt5 terminal initiated successfully!. 
+[2025-08-11 19:28:55,978] [INFO] Terminal successfully initiated.
+[2025-08-11 19:28:55,981] [INFO] Account Details
+Login: 40761020
+[2025-08-11 19:28:55,981] [INFO] Balance: 10000.0
+[2025-08-11 19:28:55,981] [INFO] Name: Olalekan Demo Standard
+[2025-08-11 19:28:55,981] [INFO] Successfully logged in.
+[2025-08-11 19:28:55,983] [INFO] Starting model build for Boom 1000 Index...
+[2025-08-11 19:28:56,085] [INFO] Starting model build for Boom 500 Index...
+[2025-08-11 19:28:56,177] [INFO] Starting model build for Crash 1000 Index...
+[2025-08-11 19:28:56,269] [INFO] Starting model build for Crash 500 Index...
+[2025-08-11 19:28:56,332] [INFO] Starting model build for Step Index...
+[2025-08-11 19:28:56,348] [INFO] Starting model build for Jump 100 Index...
+[2025-08-11 19:29:04,822] [INFO] Mean accuracy: 0.95
+[2025-08-11 19:29:04,832] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-08-11 19:29:06,154] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-08-11 19:29:06,260] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-08-11 19:29:06,262] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-08-11 19:29:06,269] [INFO] Mean accuracy: 0.97
+[2025-08-11 19:29:06,269] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-08-11 19:29:06,273] [INFO] Mean accuracy: 0.93
+[2025-08-11 19:29:06,274] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.93
+[2025-08-11 19:29:06,283] [INFO] Start polling
+[2025-08-11 19:29:06,287] [INFO] Subscriber cache refreshed
+[2025-08-11 19:29:06,288] [ERROR] Future exception was never retrieved
+future: <Future finished exception=TypeError("monitor_asset() missing 2 required positional arguments: 'bot' and 'loop'")>
+Traceback (most recent call last):
+  File "C:\Users\solom\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\solom\OneDrive\Documents\TA\Algo Tr\MT5\ROBOT\main.py", line 52, in monitor_asset_sync
+    thread = threading.Thread(target=monitor_asset(models), daemon=True) #args=(asset, signal) update_open_trades
+                                     ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\solom\OneDrive\Documents\TA\Algo Tr\MT5\ROBOT\BOT\orders\monitor.py", line 123, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: monitor_asset() missing 2 required positional arguments: 'bot' and 'loop'
+[2025-08-11 19:29:06,675] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-08-11 19:31:16,055] [INFO] Polling stopped
+[2025-08-11 19:31:16,314] [INFO] Polling stopped for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-08-11 19:31:47,972] [INFO] Subscriber cache loaded: 0 users
+[2025-08-11 19:31:48,043] [INFO] Starting the app...
+[2025-08-11 19:31:48,046] [WARNING] This might be risky.
+[2025-08-11 19:31:48,047] [CRITICAL] This is a heavy duty program !!!
+[2025-08-11 19:31:48,069] [INFO] Mt5 terminal initiated successfully!. 
+[2025-08-11 19:31:48,069] [INFO] Terminal successfully initiated.
+[2025-08-11 19:31:48,070] [INFO] Account Details
+Login: 40761020
+[2025-08-11 19:31:48,070] [INFO] Balance: 10000.0
+[2025-08-11 19:31:48,070] [INFO] Name: Olalekan Demo Standard
+[2025-08-11 19:31:48,071] [INFO] Successfully logged in.
+[2025-08-11 19:31:48,071] [INFO] Starting model build for Boom 1000 Index...
+[2025-08-11 19:31:48,072] [INFO] Starting model build for Boom 500 Index...
+[2025-08-11 19:31:48,077] [INFO] Starting model build for Crash 1000 Index...
+[2025-08-11 19:31:48,083] [INFO] Starting model build for Crash 500 Index...
+[2025-08-11 19:31:48,089] [INFO] Starting model build for Step Index...
+[2025-08-11 19:31:48,091] [INFO] Starting model build for Jump 100 Index...
+[2025-08-11 19:31:54,573] [INFO] Mean accuracy: 0.95
+[2025-08-11 19:31:54,580] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-08-11 19:31:56,439] [INFO] Mean accuracy: 0.97
+[2025-08-11 19:31:56,441] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-08-11 19:31:56,557] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-08-11 19:31:56,592] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-08-11 19:31:56,623] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-08-11 19:31:56,638] [INFO] Mean accuracy: 0.93
+[2025-08-11 19:31:56,639] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.93
+[2025-08-11 19:31:56,710] [INFO] Start polling
+[2025-08-11 19:31:56,745] [INFO] Subscriber cache refreshed
+[2025-08-11 19:31:57,763] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-08-11 19:34:54,875] [INFO] Added subscriber: -1002314831482
+[2025-08-11 19:34:55,494] [INFO] Update id=207208251 is handled. Duration 687 ms by bot id=7426056292
+[2025-08-11 19:41:56,804] [INFO] Subscriber cache loaded: 1 users
+[2025-08-11 19:45:00,530] [INFO] Updated open trades: {}
+[2025-08-11 19:45:00,531] [INFO] Open trades updated for Jump 100 Index
+[2025-08-11 19:45:00,542] [WARNING] Signal time 2025-08-10 01:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-08-11 19:45:00,545] [INFO] Open trades updated for Boom 1000 Index
+[2025-08-11 19:45:00,546] [WARNING] Signal time 2025-08-11 07:00:00 is not valid for Boom 1000 Index. Skipping.
+[2025-08-11 19:45:00,547] [INFO] Open trades updated for Step Index
+[2025-08-11 19:45:00,547] [WARNING] Signal time 2025-08-11 07:15:00 is not valid for Step Index. Skipping.
+[2025-08-11 19:45:00,549] [INFO] Open trades updated for Crash 500 Index
+[2025-08-11 19:45:00,549] [WARNING] Signal time 2025-08-11 16:00:00 is not valid for Crash 500 Index. Skipping.

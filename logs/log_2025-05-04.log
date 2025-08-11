@@ -1,0 +1,81 @@
+[2025-05-04 06:56:27,377] [INFO] Starting the app...
+[2025-05-04 06:56:27,378] [WARNING] This might be risky.
+[2025-05-04 06:56:27,378] [CRITICAL] This is a heavy duty program !!!
+[2025-05-04 06:56:27,400] [INFO] Mt5 terminal initiated successfully!. 
+[2025-05-04 06:56:27,400] [INFO] Terminal successfully initiated.
+[2025-05-04 06:56:27,400] [INFO] Account Details
+Login: 40477972
+[2025-05-04 06:56:27,401] [INFO] Balance: 15323.22
+[2025-05-04 06:56:27,401] [INFO] Name: Olalekan Demo Standard
+[2025-05-04 06:56:27,401] [INFO] Successfully logged in.
+[2025-05-04 06:56:27,402] [INFO] Starting model build for Boom 1000 Index...
+[2025-05-04 06:56:27,408] [INFO] Starting model build for Boom 500 Index...
+[2025-05-04 06:56:27,410] [INFO] Starting model build for Crash 1000 Index...
+[2025-05-04 06:56:27,421] [INFO] Starting model build for Crash 500 Index...
+[2025-05-04 06:56:27,440] [INFO] Starting model build for Step Index...
+[2025-05-04 06:56:27,448] [INFO] Starting model build for Jump 100 Index...
+[2025-05-04 06:56:30,908] [INFO] Mean accuracy: 0.95
+[2025-05-04 06:56:30,910] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-05-04 06:56:31,350] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-05-04 06:56:31,354] [INFO] Mean accuracy: 0.97
+[2025-05-04 06:56:31,356] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-05-04 06:56:31,361] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.95
+[2025-05-04 06:56:31,366] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-05-04 06:56:31,371] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-05-04 06:56:31,794] [INFO] Start polling
+[2025-05-04 06:56:32,384] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-05-04 07:00:00,014] [INFO] Updated open trades: {}
+[2025-05-04 07:00:00,015] [INFO] Open trades updated for Jump 100 Index
+[2025-05-04 07:00:00,015] [WARNING] Signal time 2025-05-02 15:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-05-04 07:00:00,017] [INFO] Open trades updated for Step Index
+[2025-05-04 07:00:00,017] [WARNING] Signal time 2025-05-03 13:15:00 is not valid for Step Index. Skipping.
+[2025-05-04 07:00:00,017] [INFO] Open trades updated for Crash 500 Index
+[2025-05-04 07:00:00,018] [WARNING] Signal time 2025-05-03 11:30:00 is not valid for Crash 500 Index. Skipping.
+[2025-05-04 07:20:55,485] [CRITICAL] Unexpected error: 'time'
+[2025-05-04 07:28:21,030] [INFO] Polling stopped
+[2025-05-04 07:28:21,321] [INFO] Polling stopped for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-05-04 12:56:40,190] [INFO] Starting the app...
+[2025-05-04 12:56:40,191] [WARNING] This might be risky.
+[2025-05-04 12:56:40,193] [CRITICAL] This is a heavy duty program !!!
+[2025-05-04 12:56:44,052] [INFO] Mt5 terminal initiated successfully!. 
+[2025-05-04 12:56:44,053] [INFO] Terminal successfully initiated.
+[2025-05-04 12:56:44,054] [INFO] Account Details
+Login: 40477972
+[2025-05-04 12:56:44,054] [INFO] Balance: 15323.22
+[2025-05-04 12:56:44,054] [INFO] Name: Olalekan Demo Standard
+[2025-05-04 12:56:44,054] [INFO] Successfully logged in.
+[2025-05-04 12:56:44,055] [INFO] Starting model build for Boom 1000 Index...
+[2025-05-04 12:56:45,302] [INFO] Starting model build for Boom 500 Index...
+[2025-05-04 12:56:45,348] [INFO] Starting model build for Crash 1000 Index...
+[2025-05-04 12:56:45,567] [INFO] Starting model build for Crash 500 Index...
+[2025-05-04 12:56:45,696] [INFO] Starting model build for Step Index...
+[2025-05-04 12:56:45,822] [INFO] Starting model build for Jump 100 Index...
+[2025-05-04 12:56:54,698] [INFO] Mean accuracy: 0.95
+[2025-05-04 12:56:54,700] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-05-04 12:56:56,331] [INFO] Mean accuracy: 0.97
+[2025-05-04 12:56:56,333] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-05-04 12:56:56,473] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-05-04 12:56:56,593] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-05-04 12:56:56,615] [INFO] Mean accuracy: 0.93
+[2025-05-04 12:56:56,617] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.93
+[2025-05-04 12:56:56,625] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-05-04 12:56:58,197] [INFO] Start polling
+[2025-05-04 12:57:00,665] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-05-04 13:00:00,489] [INFO] Updated open trades: {}
+[2025-05-04 13:00:00,489] [INFO] Open trades updated for Jump 100 Index
+[2025-05-04 13:00:00,497] [WARNING] Signal time 2025-05-02 15:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-05-04 13:00:00,497] [INFO] Open trades updated for Step Index
+[2025-05-04 13:00:00,497] [WARNING] Signal time 2025-05-04 10:30:00 is not valid for Step Index. Skipping.
+[2025-05-04 13:00:00,499] [INFO] Open trades updated for Crash 500 Index
+[2025-05-04 13:00:00,499] [WARNING] Signal time 2025-05-04 08:45:00 is not valid for Crash 500 Index. Skipping.
+[2025-05-04 15:30:00,129] [WARNING] Signal time 2025-05-04 15:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-05-04 15:30:02,602] [ERROR] Failed to execute order for Crash 500 Index: 'Crash 500 Index'
+[2025-05-04 15:30:02,793] [INFO] Updated open trades: {'Crash 500 Index': 1}
+[2025-05-04 15:30:03,583] [ERROR] Failed to execute order for Crash 500 Index: 'dict' object has no attribute 'add'
+[2025-05-04 15:30:03,761] [INFO] Updated open trades: {'Crash 500 Index': 2}
+[2025-05-04 15:30:04,770] [INFO] Updated open trades: {'Crash 500 Index': 3}
+[2025-05-04 15:30:04,772] [WARNING] Max open trades reached for Crash 500 Index. Skipping.
+[2025-05-04 15:45:00,009] [WARNING] Signal time 2025-05-04 15:30:00 is not valid for Crash 500 Index. Skipping.
+[2025-05-04 16:30:00,134] [WARNING] Signal time 2025-05-04 15:45:00 is not valid for Crash 500 Index. Skipping.
+[2025-05-04 16:32:25,047] [INFO] Polling stopped
+[2025-05-04 16:32:25,319] [INFO] Polling stopped for bot @jobbah_bot id=7426056292 - 'jobber'

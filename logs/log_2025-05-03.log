@@ -1,0 +1,57 @@
+[2025-05-03 09:23:28,092] [INFO] Starting the app...
+[2025-05-03 09:23:28,093] [WARNING] This might be risky.
+[2025-05-03 09:23:28,093] [CRITICAL] This is a heavy duty program !!!
+[2025-05-03 09:23:35,280] [INFO] Mt5 terminal initiated successfully!. 
+[2025-05-03 09:23:35,281] [INFO] Terminal successfully initiated.
+[2025-05-03 09:23:35,284] [INFO] Account Details
+Login: 40477972
+[2025-05-03 09:23:35,285] [INFO] Balance: 15292.01
+[2025-05-03 09:23:35,285] [INFO] Name: Olalekan Demo Standard
+[2025-05-03 09:23:35,285] [INFO] Successfully logged in.
+[2025-05-03 09:23:35,287] [INFO] Starting model build for Boom 1000 Index...
+[2025-05-03 09:23:36,426] [INFO] Starting model build for Boom 500 Index...
+[2025-05-03 09:23:36,456] [INFO] Starting model build for Crash 1000 Index...
+[2025-05-03 09:23:36,688] [INFO] Starting model build for Crash 500 Index...
+[2025-05-03 09:23:36,975] [INFO] Starting model build for Step Index...
+[2025-05-03 09:23:37,013] [INFO] Starting model build for Jump 100 Index...
+[2025-05-03 09:23:44,675] [INFO] Mean accuracy: 0.95
+[2025-05-03 09:23:44,677] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-05-03 09:23:46,137] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-05-03 09:23:46,245] [INFO] Mean accuracy: 0.97
+[2025-05-03 09:23:46,246] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-05-03 09:23:46,301] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-05-03 09:23:46,493] [INFO] Mean accuracy: 0.96
+[2025-05-03 09:23:46,494] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-05-03 09:23:46,508] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-05-03 09:23:47,805] [INFO] Start polling
+[2025-05-03 09:23:48,920] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-05-03 09:30:00,552] [INFO] Updated open trades: {'Boom 1000 Index': 1}
+[2025-05-03 09:30:00,553] [INFO] Open trades updated for Jump 100 Index
+[2025-05-03 09:30:00,554] [WARNING] Signal time 2025-05-03 06:45:00 is not valid for Jump 100 Index. Skipping.
+[2025-05-03 09:30:00,557] [INFO] Open trades updated for Step Index
+[2025-05-03 09:30:00,558] [WARNING] Signal time 2025-05-03 06:00:00 is not valid for Step Index. Skipping.
+[2025-05-03 09:30:00,558] [INFO] Open trades updated for Crash 1000 Index
+[2025-05-03 09:30:00,560] [WARNING] Signal time 2025-05-03 06:15:00 is not valid for Crash 1000 Index. Skipping.
+[2025-05-03 10:30:00,965] [INFO] Open trades updated for Crash 500 Index
+[2025-05-03 10:30:00,977] [WARNING] Signal time 2025-05-03 02:45:00 is not valid for Crash 500 Index. Skipping.
+[2025-05-03 11:15:00,173] [WARNING] Signal time 2025-05-03 11:00:00 is not valid for Crash 500 Index. Skipping.
+[2025-05-03 12:15:00,041] [WARNING] Signal time 2025-05-03 12:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-05-03 12:15:00,458] [WARNING] Signal time 2025-05-03 11:30:00 is not valid for Crash 500 Index. Skipping.
+[2025-05-03 12:15:03,406] [ERROR] Failed to execute order for Jump 100 Index: 'Jump 100 Index'
+[2025-05-03 12:15:03,407] [INFO] Updated open trades: {'Boom 1000 Index': 1, 'Jump 100 Index': 1}
+[2025-05-03 13:00:00,645] [INFO] Updated open trades: {}
+[2025-05-03 13:15:00,400] [WARNING] Signal time 2025-05-03 13:00:00 is not valid for Step Index. Skipping.
+[2025-05-03 13:15:03,823] [ERROR] Failed to execute order for Step Index: 'Step Index'
+[2025-05-03 13:15:03,824] [INFO] Updated open trades: {'Step Index': 1}
+[2025-05-03 13:15:04,585] [ERROR] Failed to execute order for Step Index: 'dict' object has no attribute 'add'
+[2025-05-03 13:15:04,585] [INFO] Updated open trades: {'Step Index': 2}
+[2025-05-03 13:15:07,092] [INFO] Updated open trades: {'Step Index': 3}
+[2025-05-03 13:15:07,734] [WARNING] Max open trades reached for Step Index. Skipping.
+[2025-05-03 13:30:00,179] [WARNING] Signal time 2025-05-03 13:15:00 is not valid for Step Index. Skipping.
+[2025-05-03 15:16:36,058] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-05-03 15:16:36,371] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-05-03 15:16:37,497] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+[2025-05-03 15:16:37,535] [WARNING] Sleep for 1.256301 seconds and try again... (tryings = 1, bot id = 7426056292)
+[2025-05-03 15:16:38,843] [WARNING] Sleep for 1.686024 seconds and try again... (tryings = 2, bot id = 7426056292)
+[2025-05-03 15:16:40,573] [WARNING] Sleep for 2.038815 seconds and try again... (tryings = 3, bot id = 7426056292)
+[2025-05-03 15:51:36,700] [INFO] Connection established (tryings = 4, bot id = 7426056292)

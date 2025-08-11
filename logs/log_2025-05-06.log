@@ -1,0 +1,55 @@
+[2025-05-06 14:45:30,678] [INFO] Starting the app...
+[2025-05-06 14:45:30,679] [WARNING] This might be risky.
+[2025-05-06 14:45:30,679] [CRITICAL] This is a heavy duty program !!!
+[2025-05-06 14:45:34,709] [INFO] Mt5 terminal initiated successfully!. 
+[2025-05-06 14:45:34,712] [INFO] Terminal successfully initiated.
+[2025-05-06 14:45:34,713] [INFO] Account Details
+Login: 40477972
+[2025-05-06 14:45:34,713] [INFO] Balance: 15316.77
+[2025-05-06 14:45:34,714] [INFO] Name: Olalekan Demo Standard
+[2025-05-06 14:45:34,714] [INFO] Successfully logged in.
+[2025-05-06 14:45:34,715] [INFO] Starting model build for Boom 1000 Index...
+[2025-05-06 14:45:34,849] [INFO] Starting model build for Boom 500 Index...
+[2025-05-06 14:45:35,034] [INFO] Starting model build for Crash 1000 Index...
+[2025-05-06 14:45:35,046] [INFO] Starting model build for Crash 500 Index...
+[2025-05-06 14:45:35,411] [INFO] Starting model build for Step Index...
+[2025-05-06 14:45:35,450] [INFO] Starting model build for Jump 100 Index...
+[2025-05-06 14:45:40,007] [INFO] Mean accuracy: 0.95
+[2025-05-06 14:45:40,009] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-05-06 14:45:40,453] [INFO] Mean accuracy: 0.93
+[2025-05-06 14:45:40,455] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.93
+[2025-05-06 14:45:40,469] [INFO] Mean accuracy: 0.97
+[2025-05-06 14:45:40,470] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-05-06 14:45:40,506] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-05-06 14:45:40,514] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-05-06 14:45:40,518] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-05-06 14:45:40,873] [INFO] Updated open trades: {}
+[2025-05-06 14:45:40,873] [INFO] Open trades updated for Jump 100 Index
+[2025-05-06 14:45:40,874] [WARNING] Signal time 2025-05-06 09:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-05-06 14:45:40,874] [INFO] Open trades updated for Crash 1000 Index
+[2025-05-06 14:45:40,874] [WARNING] Signal time 2025-05-06 08:45:00 is not valid for Crash 1000 Index. Skipping.
+[2025-05-06 14:45:40,875] [INFO] Open trades updated for Step Index
+[2025-05-06 14:45:40,875] [WARNING] Signal time 2025-05-05 02:45:00 is not valid for Step Index. Skipping.
+[2025-05-06 14:45:41,051] [INFO] Start polling
+[2025-05-06 14:45:42,419] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-05-06 17:10:06,990] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+[2025-05-06 17:10:07,026] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-05-06 17:10:18,945] [INFO] Connection established (tryings = 1, bot id = 7426056292)
+[2025-05-06 17:25:51,442] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-05-06 17:25:52,525] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+[2025-05-06 17:25:52,527] [WARNING] Sleep for 1.229028 seconds and try again... (tryings = 1, bot id = 7426056292)
+[2025-05-06 17:25:53,903] [WARNING] Sleep for 1.751861 seconds and try again... (tryings = 2, bot id = 7426056292)
+[2025-05-06 17:25:55,759] [WARNING] Sleep for 2.433030 seconds and try again... (tryings = 3, bot id = 7426056292)
+[2025-05-06 17:25:58,230] [WARNING] Sleep for 2.998382 seconds and try again... (tryings = 4, bot id = 7426056292)
+[2025-05-06 17:26:01,316] [WARNING] Sleep for 3.933178 seconds and try again... (tryings = 5, bot id = 7426056292)
+[2025-05-06 17:26:05,279] [WARNING] Sleep for 5.001070 seconds and try again... (tryings = 6, bot id = 7426056292)
+[2025-05-06 17:26:10,307] [WARNING] Sleep for 5.071267 seconds and try again... (tryings = 7, bot id = 7426056292)
+[2025-05-06 17:26:15,422] [WARNING] Sleep for 4.866399 seconds and try again... (tryings = 8, bot id = 7426056292)
+[2025-05-06 17:26:20,449] [WARNING] Sleep for 4.753309 seconds and try again... (tryings = 9, bot id = 7426056292)
+[2025-05-06 17:26:25,250] [WARNING] Sleep for 4.980716 seconds and try again... (tryings = 10, bot id = 7426056292)
+[2025-05-06 17:26:30,283] [WARNING] Sleep for 5.004793 seconds and try again... (tryings = 11, bot id = 7426056292)
+[2025-05-06 17:26:35,344] [WARNING] Sleep for 4.983916 seconds and try again... (tryings = 12, bot id = 7426056292)
+[2025-05-06 17:26:40,429] [WARNING] Sleep for 5.187048 seconds and try again... (tryings = 13, bot id = 7426056292)
+[2025-05-06 17:26:45,739] [WARNING] Sleep for 5.034065 seconds and try again... (tryings = 14, bot id = 7426056292)
+[2025-05-06 17:26:48,019] [INFO] Polling stopped
+[2025-05-06 17:26:48,320] [INFO] Polling stopped for bot @jobbah_bot id=7426056292 - 'jobber'

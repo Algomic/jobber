@@ -1,0 +1,72 @@
+[2025-06-01 08:18:40,928] [INFO] Starting the app...
+[2025-06-01 08:18:40,928] [WARNING] This might be risky.
+[2025-06-01 08:18:40,928] [CRITICAL] This is a heavy duty program !!!
+[2025-06-01 08:18:49,724] [INFO] Mt5 terminal initiated successfully!. 
+[2025-06-01 08:18:49,724] [INFO] Terminal successfully initiated.
+[2025-06-01 08:18:49,727] [INFO] Account Details
+Login: 40477972
+[2025-06-01 08:18:49,727] [INFO] Balance: 15316.71
+[2025-06-01 08:18:49,727] [INFO] Name: Olalekan Awoyemi
+[2025-06-01 08:18:49,727] [INFO] Successfully logged in.
+[2025-06-01 08:18:49,728] [INFO] Starting model build for Boom 1000 Index...
+[2025-06-01 08:18:50,047] [INFO] Starting model build for Boom 500 Index...
+[2025-06-01 08:18:50,052] [INFO] Starting model build for Crash 1000 Index...
+[2025-06-01 08:18:50,111] [INFO] Starting model build for Crash 500 Index...
+[2025-06-01 08:18:50,462] [INFO] Starting model build for Step Index...
+[2025-06-01 08:18:50,693] [INFO] Starting model build for Jump 100 Index...
+[2025-06-01 08:19:00,922] [INFO] Mean accuracy: 0.95
+[2025-06-01 08:19:00,931] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-06-01 08:19:03,060] [INFO] Mean accuracy: 0.97
+[2025-06-01 08:19:03,061] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-06-01 08:19:03,102] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-06-01 08:19:03,180] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-06-01 08:19:03,242] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-06-01 08:19:03,262] [INFO] Mean accuracy: 0.96
+[2025-06-01 08:19:03,263] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-06-01 08:19:04,569] [INFO] Start polling
+[2025-06-01 08:19:08,350] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-06-01 08:30:00,280] [INFO] Updated open trades: {}
+[2025-06-01 08:30:00,286] [INFO] Open trades updated for Step Index
+[2025-06-01 08:30:00,287] [WARNING] Signal time 2025-05-30 09:00:00 is not valid for Step Index. Skipping.
+[2025-06-01 08:30:00,288] [INFO] Open trades updated for Crash 1000 Index
+[2025-06-01 08:30:00,289] [WARNING] Signal time 2025-06-01 02:30:00 is not valid for Crash 1000 Index. Skipping.
+[2025-06-01 09:15:46,828] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-06-01 09:15:46,840] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-06-01 09:15:58,198] [INFO] Connection established (tryings = 1, bot id = 7426056292)
+[2025-06-01 10:33:00,114] [INFO] Polling stopped
+[2025-06-01 10:33:00,415] [INFO] Polling stopped for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-06-01 19:05:24,767] [INFO] Starting the app...
+[2025-06-01 19:05:24,769] [WARNING] This might be risky.
+[2025-06-01 19:05:24,769] [CRITICAL] This is a heavy duty program !!!
+[2025-06-01 19:05:24,897] [INFO] Mt5 terminal initiated successfully!. 
+[2025-06-01 19:05:24,899] [INFO] Terminal successfully initiated.
+[2025-06-01 19:05:24,901] [INFO] Account Details
+Login: 40477972
+[2025-06-01 19:05:24,902] [INFO] Balance: 15316.71
+[2025-06-01 19:05:24,902] [INFO] Name: Olalekan Awoyemi
+[2025-06-01 19:05:24,903] [INFO] Successfully logged in.
+[2025-06-01 19:05:24,904] [INFO] Starting model build for Boom 1000 Index...
+[2025-06-01 19:05:24,975] [INFO] Starting model build for Boom 500 Index...
+[2025-06-01 19:05:25,052] [INFO] Starting model build for Crash 1000 Index...
+[2025-06-01 19:05:25,307] [INFO] Starting model build for Crash 500 Index...
+[2025-06-01 19:05:25,553] [INFO] Starting model build for Step Index...
+[2025-06-01 19:05:25,597] [INFO] Starting model build for Jump 100 Index...
+[2025-06-01 19:05:34,042] [INFO] Mean accuracy: 0.95
+[2025-06-01 19:05:34,043] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-06-01 19:05:34,745] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-06-01 19:05:34,759] [INFO] Mean accuracy: 0.97
+[2025-06-01 19:05:34,761] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-06-01 19:05:34,795] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-06-01 19:05:34,883] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-06-01 19:05:34,884] [INFO] Mean accuracy: 0.96
+[2025-06-01 19:05:34,885] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-06-01 19:05:35,683] [INFO] Start polling
+[2025-06-01 19:05:36,987] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-06-01 19:15:00,111] [INFO] Updated open trades: {}
+[2025-06-01 19:15:00,117] [INFO] Open trades updated for Step Index
+[2025-06-01 19:15:00,118] [WARNING] Signal time 2025-05-30 09:00:00 is not valid for Step Index. Skipping.
+[2025-06-01 19:15:00,119] [INFO] Open trades updated for Crash 1000 Index
+[2025-06-01 19:15:00,119] [WARNING] Signal time 2025-06-01 15:00:00 is not valid for Crash 1000 Index. Skipping.
+[2025-06-01 20:17:51,760] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-06-01 20:17:51,777] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-06-01 20:18:03,201] [INFO] Connection established (tryings = 1, bot id = 7426056292)
