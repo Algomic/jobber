@@ -1,0 +1,37 @@
+[2025-10-04 10:14:27,032] [INFO] Subscriber cache loaded: 3 users
+[2025-10-04 10:14:27,049] [INFO] Starting the app...
+[2025-10-04 10:14:27,049] [WARNING] This might be risky.
+[2025-10-04 10:14:27,050] [CRITICAL] This is a heavy duty program !!!
+[2025-10-04 10:14:33,514] [INFO] Mt5 terminal initiated successfully!. 
+[2025-10-04 10:14:33,514] [INFO] Terminal successfully initiated.
+[2025-10-04 10:14:33,517] [INFO] Account Details
+Login: 40761020
+[2025-10-04 10:14:33,517] [INFO] Balance: 9917.41
+[2025-10-04 10:14:33,517] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-10-04 10:14:33,517] [INFO] Successfully logged in.
+[2025-10-04 10:14:33,519] [INFO] Starting model build for Boom 1000 Index...
+[2025-10-04 10:14:33,668] [INFO] Starting model build for Boom 500 Index...
+[2025-10-04 10:15:34,691] [INFO] Starting model build for Crash 1000 Index...
+[2025-10-04 10:15:34,923] [INFO] Starting model build for Crash 500 Index...
+[2025-10-04 10:15:35,089] [INFO] Starting model build for Step Index...
+[2025-10-04 10:15:35,120] [INFO] Starting model build for Jump 100 Index...
+[2025-10-04 10:15:40,528] [INFO] Mean accuracy: 0.95
+[2025-10-04 10:15:40,550] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-10-04 10:15:41,129] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-10-04 10:15:41,131] [INFO] Mean accuracy: 0.97
+[2025-10-04 10:15:41,131] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-10-04 10:15:41,177] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-10-04 10:15:41,212] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-10-04 10:15:41,217] [INFO] Mean accuracy: 0.93
+[2025-10-04 10:15:41,217] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.93
+[2025-10-04 10:15:41,290] [INFO] Start polling
+[2025-10-04 10:15:41,351] [INFO] Subscriber cache refreshed
+[2025-10-04 10:15:41,891] [INFO] Updated open trades: {'Step Index': 1}
+[2025-10-04 10:15:41,892] [INFO] Open trades updated for Jump 100 Index
+[2025-10-04 10:15:41,893] [WARNING] Signal time 2025-10-04 07:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-10-04 10:15:41,895] [INFO] Open trades updated for Step Index
+[2025-10-04 10:15:41,896] [WARNING] Signal time 2025-10-04 03:30:00 is not valid for Step Index. Skipping.
+[2025-10-04 10:15:41,896] [INFO] Open trades updated for Crash 500 Index
+[2025-10-04 10:15:41,897] [WARNING] Signal time 2025-10-04 08:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-10-04 10:15:41,985] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-10-04 10:19:42,453] [CRITICAL] Unexpected error: 'time'

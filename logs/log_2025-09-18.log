@@ -1,0 +1,88 @@
+[2025-09-18 09:04:58,014] [INFO] Subscriber cache loaded: 3 users
+[2025-09-18 09:04:58,142] [INFO] Starting the app...
+[2025-09-18 09:04:58,143] [WARNING] This might be risky.
+[2025-09-18 09:04:58,144] [CRITICAL] This is a heavy duty program !!!
+[2025-09-18 09:05:02,405] [INFO] Mt5 terminal initiated successfully!. 
+[2025-09-18 09:05:02,407] [INFO] Terminal successfully initiated.
+[2025-09-18 09:05:02,409] [INFO] Account Details
+Login: 40761020
+[2025-09-18 09:05:02,409] [INFO] Balance: 9978.79
+[2025-09-18 09:05:02,410] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-09-18 09:05:02,410] [INFO] Successfully logged in.
+[2025-09-18 09:05:02,428] [INFO] Starting model build for Boom 1000 Index...
+[2025-09-18 09:05:02,607] [INFO] Starting model build for Boom 500 Index...
+[2025-09-18 09:05:02,685] [INFO] Starting model build for Crash 1000 Index...
+[2025-09-18 09:05:02,762] [INFO] Starting model build for Crash 500 Index...
+[2025-09-18 09:05:02,854] [INFO] Starting model build for Step Index...
+[2025-09-18 09:05:02,952] [INFO] Starting model build for Jump 100 Index...
+[2025-09-18 09:05:10,950] [INFO] Mean accuracy: 0.95
+[2025-09-18 09:05:10,956] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-09-18 09:05:11,814] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-09-18 09:05:11,836] [INFO] Mean accuracy: 0.97
+[2025-09-18 09:05:11,840] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-09-18 09:05:11,852] [INFO] Mean accuracy: 0.96
+[2025-09-18 09:05:11,853] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-09-18 09:05:11,880] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-09-18 09:05:11,894] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-09-18 09:05:12,254] [INFO] Start polling
+[2025-09-18 09:05:12,343] [INFO] Subscriber cache refreshed
+[2025-09-18 09:05:14,047] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-09-18 09:15:00,057] [INFO] Updated open trades: {}
+[2025-09-18 09:15:00,084] [INFO] Open trades updated for Boom 1000 Index
+[2025-09-18 09:15:00,088] [WARNING] Signal time 2025-09-18 08:00:00 is not valid for Boom 1000 Index. Skipping.
+[2025-09-18 09:15:00,090] [INFO] Open trades updated for Step Index
+[2025-09-18 09:15:00,090] [WARNING] Signal time 2025-09-18 09:00:00 is not valid for Step Index. Skipping.
+[2025-09-18 09:15:00,090] [INFO] Open trades updated for Crash 500 Index
+[2025-09-18 09:15:00,090] [WARNING] Signal time 2025-09-18 08:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-09-18 09:15:05,269] [ERROR] Failed to execute order for Step Index: 'Step Index'
+[2025-09-18 09:15:05,276] [INFO] Updated open trades: {'Step Index': 1}
+[2025-09-18 09:15:06,676] [ERROR] Failed to execute order for Step Index: 'dict' object has no attribute 'add'
+[2025-09-18 09:15:06,677] [INFO] Updated open trades: {'Step Index': 2}
+[2025-09-18 09:15:08,025] [INFO] Updated open trades: {'Step Index': 3}
+[2025-09-18 09:15:08,632] [WARNING] Max open trades reached for Step Index. Skipping.
+[2025-09-18 09:30:00,110] [WARNING] Signal time 2025-09-18 09:15:00 is not valid for Step Index. Skipping.
+[2025-09-18 09:45:00,293] [WARNING] Signal time 2025-09-18 09:30:00 is not valid for Step Index. Skipping.
+[2025-09-18 10:00:00,432] [WARNING] Signal time 2025-09-18 09:45:00 is not valid for Step Index. Skipping.
+[2025-09-18 10:15:00,046] [WARNING] Signal time 2025-09-18 10:00:00 is not valid for Step Index. Skipping.
+[2025-09-18 10:17:41,157] [INFO] Shutting down monitor...
+[2025-09-18 10:17:41,165] [INFO] monitor_asset ran for 4349.2559 seconds
+[2025-09-18 10:20:59,577] [INFO] Subscriber cache loaded: 3 users
+[2025-09-18 10:20:59,667] [INFO] Starting the app...
+[2025-09-18 10:20:59,759] [WARNING] This might be risky.
+[2025-09-18 10:20:59,759] [CRITICAL] This is a heavy duty program !!!
+[2025-09-18 10:21:00,050] [INFO] Mt5 terminal initiated successfully!. 
+[2025-09-18 10:21:00,050] [INFO] Terminal successfully initiated.
+[2025-09-18 10:21:00,053] [INFO] Account Details
+Login: 40761020
+[2025-09-18 10:21:00,053] [INFO] Balance: 9936.59
+[2025-09-18 10:21:00,055] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-09-18 10:21:00,055] [INFO] Successfully logged in.
+[2025-09-18 10:21:00,057] [INFO] Starting model build for Boom 1000 Index...
+[2025-09-18 10:21:00,117] [INFO] Starting model build for Boom 500 Index...
+[2025-09-18 10:21:00,184] [INFO] Starting model build for Crash 1000 Index...
+[2025-09-18 10:21:00,602] [INFO] Starting model build for Crash 500 Index...
+[2025-09-18 10:21:00,721] [INFO] Starting model build for Step Index...
+[2025-09-18 10:21:00,775] [INFO] Starting model build for Jump 100 Index...
+[2025-09-18 10:21:14,736] [INFO] Mean accuracy: 0.95
+[2025-09-18 10:21:14,736] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-09-18 10:21:15,118] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-09-18 10:21:15,233] [INFO] Mean accuracy: 0.96
+[2025-09-18 10:21:15,235] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-09-18 10:21:15,606] [INFO] Mean accuracy: 0.97
+[2025-09-18 10:21:15,608] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-09-18 10:21:15,611] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-09-18 10:21:15,623] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-09-18 10:21:15,631] [INFO] Start polling
+[2025-09-18 10:21:15,633] [INFO] Subscriber cache refreshed
+[2025-09-18 10:21:15,953] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-09-18 10:30:00,599] [INFO] Updated open trades: {'Step Index': 3}
+[2025-09-18 10:30:01,457] [INFO] Open trades updated for Crash 500 Index
+[2025-09-18 10:30:01,513] [WARNING] Signal time 2025-09-18 08:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-09-18 10:30:01,544] [INFO] Open trades updated for Boom 1000 Index
+[2025-09-18 10:30:01,545] [WARNING] Signal time 2025-09-18 08:00:00 is not valid for Boom 1000 Index. Skipping.
+[2025-09-18 10:30:01,545] [INFO] Open trades updated for Step Index
+[2025-09-18 10:30:01,546] [WARNING] Max open trades reached for Step Index. Skipping.
+[2025-09-18 11:30:00,118] [INFO] Updated open trades: {}
+[2025-09-18 11:30:00,139] [WARNING] Signal time 2025-09-18 10:00:00 is not valid for Step Index. Skipping.
+[2025-09-18 13:19:29,653] [INFO] Shutting down monitor...
+[2025-09-18 13:19:29,665] [INFO] monitor_asset ran for 10693.9372 seconds

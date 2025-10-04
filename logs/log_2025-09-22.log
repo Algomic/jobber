@@ -1,0 +1,59 @@
+[2025-09-22 18:33:30,629] [INFO] Subscriber cache loaded: 3 users
+[2025-09-22 18:33:30,642] [INFO] Starting the app...
+[2025-09-22 18:33:30,643] [WARNING] This might be risky.
+[2025-09-22 18:33:30,643] [CRITICAL] This is a heavy duty program !!!
+[2025-09-22 18:33:38,324] [INFO] Mt5 terminal initiated successfully!. 
+[2025-09-22 18:33:38,326] [INFO] Terminal successfully initiated.
+[2025-09-22 18:33:38,327] [INFO] Account Details
+Login: 40761020
+[2025-09-22 18:33:38,327] [INFO] Balance: 9914.17
+[2025-09-22 18:33:38,327] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-09-22 18:33:38,327] [INFO] Successfully logged in.
+[2025-09-22 18:33:38,329] [INFO] Starting model build for Boom 1000 Index...
+[2025-09-22 18:33:39,516] [INFO] Starting model build for Boom 500 Index...
+[2025-09-22 18:33:39,548] [INFO] Starting model build for Crash 1000 Index...
+[2025-09-22 18:33:40,058] [INFO] Starting model build for Crash 500 Index...
+[2025-09-22 18:33:40,487] [INFO] Starting model build for Step Index...
+[2025-09-22 18:33:40,508] [INFO] Starting model build for Jump 100 Index...
+[2025-09-22 18:33:47,410] [INFO] Mean accuracy: 0.95
+[2025-09-22 18:33:47,412] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-09-22 18:33:48,202] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-09-22 18:33:48,221] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.95
+[2025-09-22 18:33:48,248] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-09-22 18:33:48,256] [INFO] Mean accuracy: 0.97
+[2025-09-22 18:33:48,256] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-09-22 18:33:48,258] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-09-22 18:33:48,334] [INFO] Start polling
+[2025-09-22 18:33:48,408] [INFO] Subscriber cache refreshed
+[2025-09-22 18:33:50,839] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-09-22 18:45:00,352] [INFO] Updated open trades: {'Step Index': 1}
+[2025-09-22 18:45:00,367] [INFO] Open trades updated for Jump 100 Index
+[2025-09-22 18:45:00,370] [WARNING] Signal time 2025-09-22 06:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-09-22 18:45:00,374] [INFO] Open trades updated for Crash 500 Index
+[2025-09-22 18:45:00,375] [WARNING] Signal time 2025-09-22 10:45:00 is not valid for Crash 500 Index. Skipping.
+[2025-09-22 18:45:00,376] [INFO] Open trades updated for Crash 1000 Index
+[2025-09-22 18:45:00,377] [WARNING] Signal time 2025-09-22 11:00:00 is not valid for Crash 1000 Index. Skipping.
+[2025-09-22 18:45:00,378] [INFO] Open trades updated for Step Index
+[2025-09-22 18:45:00,379] [WARNING] Signal time 2025-09-22 16:30:00 is not valid for Step Index. Skipping.
+[2025-09-22 18:45:00,381] [INFO] Open trades updated for Boom 500 Index
+[2025-09-22 18:45:00,381] [WARNING] Signal time 2025-09-22 11:15:00 is not valid for Boom 500 Index. Skipping.
+[2025-09-22 20:20:49,217] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-09-22 20:20:49,226] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-09-22 20:21:00,581] [INFO] Connection established (tryings = 1, bot id = 7426056292)
+[2025-09-22 21:00:00,401] [INFO] Updated open trades: {'Step Index': 1, 'Crash 500 Index': 3}
+[2025-09-22 21:00:00,415] [WARNING] Max open trades reached for Crash 500 Index. Skipping.
+[2025-09-22 21:30:08,466] [ERROR] Failed to execute order for Boom 500 Index: 'Boom 500 Index'
+[2025-09-22 21:30:09,002] [INFO] Updated open trades: {'Step Index': 1, 'Crash 500 Index': 3, 'Boom 500 Index': 1}
+[2025-09-22 21:30:09,975] [ERROR] Failed to execute order for Boom 500 Index: 'dict' object has no attribute 'add'
+[2025-09-22 21:30:10,523] [INFO] Updated open trades: {'Step Index': 1, 'Crash 500 Index': 3, 'Boom 500 Index': 2}
+[2025-09-22 21:30:12,300] [INFO] Updated open trades: {'Step Index': 1, 'Crash 500 Index': 3, 'Boom 500 Index': 3}
+[2025-09-22 21:30:12,307] [WARNING] Max open trades reached for Boom 500 Index. Skipping.
+[2025-09-22 22:30:00,323] [WARNING] Signal time 2025-09-22 21:30:00 is not valid for Boom 500 Index. Skipping.
+[2025-09-22 22:45:00,055] [WARNING] Signal time 2025-09-22 22:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-09-22 22:45:02,811] [ERROR] Failed to execute order for Jump 100 Index: 'Jump 100 Index'
+[2025-09-22 22:45:02,813] [INFO] Updated open trades: {'Step Index': 1, 'Crash 500 Index': 3, 'Jump 100 Index': 1}
+[2025-09-22 22:45:04,840] [ERROR] Failed to execute order for Jump 100 Index: 'dict' object has no attribute 'add'
+[2025-09-22 22:45:04,841] [INFO] Updated open trades: {'Step Index': 1, 'Crash 500 Index': 3, 'Jump 100 Index': 2}
+[2025-09-22 22:45:06,705] [INFO] Updated open trades: {'Step Index': 1, 'Crash 500 Index': 3, 'Jump 100 Index': 3}
+[2025-09-22 22:45:07,328] [WARNING] Max open trades reached for Jump 100 Index. Skipping.
+[2025-09-23 00:00:02,487] [WARNING] Signal time 2025-09-21 02:30:00 is not valid for Jump 100 Index. Skipping.

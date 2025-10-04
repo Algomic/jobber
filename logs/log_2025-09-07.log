@@ -1,0 +1,70 @@
+[2025-09-07 12:27:10,210] [INFO] Subscriber cache loaded: 1 users
+[2025-09-07 12:27:10,225] [INFO] Starting the app...
+[2025-09-07 12:27:10,226] [WARNING] This might be risky.
+[2025-09-07 12:27:10,226] [CRITICAL] This is a heavy duty program !!!
+[2025-09-07 12:27:15,161] [INFO] Mt5 terminal initiated successfully!. 
+[2025-09-07 12:27:15,161] [INFO] Terminal successfully initiated.
+[2025-09-07 12:27:15,163] [INFO] Account Details
+Login: 40761020
+[2025-09-07 12:27:15,163] [INFO] Balance: 10000.0
+[2025-09-07 12:27:15,163] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-09-07 12:27:15,164] [INFO] Successfully logged in.
+[2025-09-07 12:27:15,166] [INFO] Starting model build for Boom 1000 Index...
+[2025-09-07 12:27:15,401] [INFO] Starting model build for Boom 500 Index...
+[2025-09-07 12:27:15,619] [INFO] Starting model build for Crash 1000 Index...
+[2025-09-07 12:27:15,822] [INFO] Starting model build for Crash 500 Index...
+[2025-09-07 12:27:16,334] [INFO] Starting model build for Step Index...
+[2025-09-07 12:27:16,375] [INFO] Starting model build for Jump 100 Index...
+[2025-09-07 12:27:23,015] [INFO] Mean accuracy: 0.95
+[2025-09-07 12:27:23,016] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-09-07 12:27:23,842] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-09-07 12:27:23,860] [INFO] Mean accuracy: 0.97
+[2025-09-07 12:27:23,860] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-09-07 12:27:23,889] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-09-07 12:27:23,909] [INFO] Mean accuracy: 0.96
+[2025-09-07 12:27:23,909] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-09-07 12:27:23,929] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-09-07 12:27:23,981] [INFO] Start polling
+[2025-09-07 12:27:24,005] [INFO] Subscriber cache refreshed
+[2025-09-07 12:27:24,611] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-09-07 12:30:00,119] [INFO] Updated open trades: {}
+[2025-09-07 12:30:00,119] [INFO] Open trades updated for Jump 100 Index
+[2025-09-07 12:30:00,120] [WARNING] Signal time 2025-09-07 05:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-09-07 12:30:00,122] [INFO] Open trades updated for Step Index
+[2025-09-07 12:30:00,122] [WARNING] Signal time 2025-09-05 10:45:00 is not valid for Step Index. Skipping.
+[2025-09-07 12:30:00,123] [INFO] Open trades updated for Boom 500 Index
+[2025-09-07 12:30:00,123] [WARNING] Signal time 2025-09-05 07:45:00 is not valid for Boom 500 Index. Skipping.
+[2025-09-07 12:30:00,123] [INFO] Open trades updated for Crash 1000 Index
+[2025-09-07 12:30:00,124] [WARNING] Signal time 2025-09-07 00:45:00 is not valid for Crash 1000 Index. Skipping.
+[2025-09-07 12:33:32,730] [INFO] Added subscriber: 1323702727
+[2025-09-07 12:33:33,072] [INFO] Update id=207208254 is handled. Duration 359 ms by bot id=7426056292
+[2025-09-07 12:34:21,316] [INFO] Update id=207208255 is handled. Duration 125 ms by bot id=7426056292
+[2025-09-07 12:37:24,045] [INFO] Subscriber cache loaded: 2 users
+[2025-09-07 12:37:26,105] [INFO] Added subscriber: 7866202693
+[2025-09-07 12:37:26,254] [INFO] Update id=207208256 is handled. Duration 172 ms by bot id=7426056292
+[2025-09-07 12:38:36,807] [INFO] Removed subscriber: -1002314831482
+[2025-09-07 12:38:36,937] [INFO] Update id=207208257 is handled. Duration 157 ms by bot id=7426056292
+[2025-09-07 12:40:22,415] [INFO] Added subscriber: -1002314831482
+[2025-09-07 12:40:22,559] [INFO] Update id=207208258 is handled. Duration 172 ms by bot id=7426056292
+[2025-09-07 12:47:24,086] [INFO] Subscriber cache loaded: 3 users
+[2025-09-07 13:52:55,607] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 121] The semaphore timeout period has expired
+[2025-09-07 13:52:55,623] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-09-07 13:53:17,709] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+[2025-09-07 13:53:17,716] [WARNING] Sleep for 1.286661 seconds and try again... (tryings = 1, bot id = 7426056292)
+[2025-09-07 13:53:40,107] [WARNING] Sleep for 1.544284 seconds and try again... (tryings = 2, bot id = 7426056292)
+[2025-09-07 13:54:02,733] [WARNING] Sleep for 2.105255 seconds and try again... (tryings = 3, bot id = 7426056292)
+[2025-09-07 13:54:25,934] [WARNING] Sleep for 2.858301 seconds and try again... (tryings = 4, bot id = 7426056292)
+[2025-09-07 13:54:49,948] [WARNING] Sleep for 3.821791 seconds and try again... (tryings = 5, bot id = 7426056292)
+[2025-09-07 13:55:11,437] [INFO] Connection established (tryings = 6, bot id = 7426056292)
+[2025-09-07 14:15:19,915] [ERROR] Order failed, retcode=10027
+[2025-09-07 14:15:19,918] [WARNING] No open positions found for Crash 1000 Index.
+[2025-09-07 14:15:19,921] [ERROR] Failed to execute order for Crash 1000 Index: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 10504 and this is thread id 41440.
+[2025-09-07 15:30:37,848] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-09-07 15:30:49,228] [INFO] Connection established (tryings = 1, bot id = 7426056292)
+[2025-09-07 21:30:51,826] [ERROR] Failed to execute order for Jump 100 Index: 'Jump 100 Index'
+[2025-09-07 21:30:51,830] [INFO] Updated open trades: {'Jump 100 Index': 1}
+[2025-09-07 21:30:53,273] [ERROR] Failed to execute order for Jump 100 Index: 'dict' object has no attribute 'add'
+[2025-09-07 21:30:53,275] [INFO] Updated open trades: {'Jump 100 Index': 2}
+[2025-09-07 21:45:00,022] [INFO] Updated open trades: {'Jump 100 Index': 3}
+[2025-09-07 21:45:00,026] [WARNING] Max open trades reached for Jump 100 Index. Skipping.
+[2025-09-07 23:15:00,131] [WARNING] Signal time 2025-09-07 21:45:00 is not valid for Jump 100 Index. Skipping.

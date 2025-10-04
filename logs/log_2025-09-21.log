@@ -1,0 +1,108 @@
+[2025-09-21 15:49:33,539] [INFO] Subscriber cache loaded: 3 users
+[2025-09-21 15:49:33,555] [INFO] Starting the app...
+[2025-09-21 15:49:33,555] [WARNING] This might be risky.
+[2025-09-21 15:49:33,555] [CRITICAL] This is a heavy duty program !!!
+[2025-09-21 15:49:38,428] [INFO] Mt5 terminal initiated successfully!. 
+[2025-09-21 15:49:38,429] [INFO] Terminal successfully initiated.
+[2025-09-21 15:49:38,430] [INFO] Account Details
+Login: 40761020
+[2025-09-21 15:49:38,431] [INFO] Balance: 9914.17
+[2025-09-21 15:49:38,431] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-09-21 15:49:38,431] [INFO] Successfully logged in.
+[2025-09-21 15:49:38,434] [INFO] Starting model build for Boom 1000 Index...
+[2025-09-21 15:49:42,381] [INFO] Starting model build for Boom 500 Index...
+[2025-09-21 15:49:42,399] [INFO] Starting model build for Crash 1000 Index...
+[2025-09-21 15:49:42,613] [INFO] Starting model build for Crash 500 Index...
+[2025-09-21 15:49:42,795] [INFO] Starting model build for Step Index...
+[2025-09-21 15:49:42,826] [INFO] Starting model build for Jump 100 Index...
+[2025-09-21 15:49:46,943] [INFO] Mean accuracy: 0.95
+[2025-09-21 15:49:46,954] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-09-21 15:49:47,468] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-09-21 15:49:47,487] [INFO] Mean accuracy: 0.97
+[2025-09-21 15:49:47,488] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-09-21 15:49:47,514] [INFO] Mean accuracy: 0.93
+[2025-09-21 15:49:47,515] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.93
+[2025-09-21 15:49:47,519] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-09-21 15:49:47,527] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-09-21 15:49:47,530] [ERROR] Error in monitor loop: monitor_asset() missing 1 required positional argument: 'bot_loop'
+[2025-09-21 15:49:47,533] [INFO] Start polling
+[2025-09-21 15:49:47,534] [INFO] Subscriber cache refreshed
+[2025-09-21 15:49:47,977] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-09-21 15:50:36,240] [INFO] Subscriber cache loaded: 3 users
+[2025-09-21 15:50:36,249] [INFO] Starting the app...
+[2025-09-21 15:50:36,250] [WARNING] This might be risky.
+[2025-09-21 15:50:36,250] [CRITICAL] This is a heavy duty program !!!
+[2025-09-21 15:50:36,269] [INFO] Mt5 terminal initiated successfully!. 
+[2025-09-21 15:50:36,269] [INFO] Terminal successfully initiated.
+[2025-09-21 15:50:36,269] [INFO] Account Details
+Login: 40761020
+[2025-09-21 15:50:36,270] [INFO] Balance: 9914.17
+[2025-09-21 15:50:36,270] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-09-21 15:50:36,270] [INFO] Successfully logged in.
+[2025-09-21 15:50:36,272] [INFO] Starting model build for Boom 1000 Index...
+[2025-09-21 15:50:36,273] [INFO] Starting model build for Boom 500 Index...
+[2025-09-21 15:50:36,274] [INFO] Starting model build for Crash 1000 Index...
+[2025-09-21 15:50:36,275] [INFO] Starting model build for Crash 500 Index...
+[2025-09-21 15:50:36,288] [INFO] Starting model build for Step Index...
+[2025-09-21 15:50:36,304] [INFO] Starting model build for Jump 100 Index...
+[2025-09-21 15:50:39,523] [INFO] Mean accuracy: 0.95
+[2025-09-21 15:50:39,524] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-09-21 15:50:40,002] [INFO] Mean accuracy: 0.97
+[2025-09-21 15:50:40,002] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-09-21 15:50:40,062] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-09-21 15:50:40,071] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-09-21 15:50:40,086] [INFO] Mean accuracy: 0.93
+[2025-09-21 15:50:40,086] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.93
+[2025-09-21 15:50:40,087] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-09-21 15:50:40,146] [INFO] Start polling
+[2025-09-21 15:50:40,149] [INFO] Subscriber cache refreshed
+[2025-09-21 15:50:40,704] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-09-21 16:00:00,069] [INFO] Updated open trades: {'Step Index': 1}
+[2025-09-21 16:00:00,069] [INFO] Open trades updated for Jump 100 Index
+[2025-09-21 16:00:00,070] [WARNING] Signal time 2025-09-21 05:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-09-21 16:00:00,070] [INFO] Open trades updated for Step Index
+[2025-09-21 16:00:00,070] [WARNING] Signal time 2025-09-21 15:30:00 is not valid for Step Index. Skipping.
+[2025-09-21 16:00:00,071] [INFO] Open trades updated for Crash 1000 Index
+[2025-09-21 16:00:00,071] [WARNING] Signal time 2025-09-20 11:15:00 is not valid for Crash 1000 Index. Skipping.
+[2025-09-21 16:00:00,071] [INFO] Open trades updated for Crash 500 Index
+[2025-09-21 16:00:00,071] [WARNING] Signal time 2025-09-21 06:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-09-21 16:47:19,206] [INFO] Shutting down monitor...
+[2025-09-21 16:47:19,212] [INFO] monitor_asset ran for 3399.1218 seconds
+[2025-09-21 19:30:52,117] [INFO] Subscriber cache loaded: 3 users
+[2025-09-21 19:30:52,130] [INFO] Starting the app...
+[2025-09-21 19:30:52,130] [WARNING] This might be risky.
+[2025-09-21 19:30:52,131] [CRITICAL] This is a heavy duty program !!!
+[2025-09-21 19:30:57,398] [INFO] Mt5 terminal initiated successfully!. 
+[2025-09-21 19:30:57,398] [INFO] Terminal successfully initiated.
+[2025-09-21 19:30:57,400] [INFO] Account Details
+Login: 40761020
+[2025-09-21 19:30:57,401] [INFO] Balance: 9914.17
+[2025-09-21 19:30:57,401] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-09-21 19:30:57,401] [INFO] Successfully logged in.
+[2025-09-21 19:30:57,401] [INFO] Starting model build for Boom 1000 Index...
+[2025-09-21 19:30:59,696] [INFO] Starting model build for Boom 500 Index...
+[2025-09-21 19:30:59,728] [INFO] Starting model build for Crash 1000 Index...
+[2025-09-21 19:30:59,930] [INFO] Starting model build for Crash 500 Index...
+[2025-09-21 19:30:59,950] [INFO] Starting model build for Step Index...
+[2025-09-21 19:31:00,135] [INFO] Starting model build for Jump 100 Index...
+[2025-09-21 19:31:04,154] [INFO] Mean accuracy: 0.95
+[2025-09-21 19:31:04,155] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-09-21 19:31:04,623] [INFO] Mean accuracy: 0.97
+[2025-09-21 19:31:04,624] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-09-21 19:31:04,673] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-09-21 19:31:04,675] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-09-21 19:31:04,678] [INFO] Mean accuracy: 0.96
+[2025-09-21 19:31:04,680] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-09-21 19:31:04,687] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-09-21 19:31:04,829] [INFO] Start polling
+[2025-09-21 19:31:04,867] [INFO] Subscriber cache refreshed
+[2025-09-21 19:31:05,757] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-09-21 19:45:00,230] [INFO] Updated open trades: {'Step Index': 1}
+[2025-09-21 19:45:00,231] [INFO] Open trades updated for Jump 100 Index
+[2025-09-21 19:45:00,232] [WARNING] Signal time 2025-09-21 18:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-09-21 19:45:00,232] [INFO] Open trades updated for Step Index
+[2025-09-21 19:45:00,233] [WARNING] Signal time 2025-09-21 15:30:00 is not valid for Step Index. Skipping.
+[2025-09-21 19:45:00,233] [INFO] Open trades updated for Crash 1000 Index
+[2025-09-21 19:45:00,234] [WARNING] Signal time 2025-09-20 11:15:00 is not valid for Crash 1000 Index. Skipping.
+[2025-09-21 19:45:00,234] [INFO] Open trades updated for Crash 500 Index
+[2025-09-21 19:45:00,234] [WARNING] Signal time 2025-09-21 06:15:00 is not valid for Crash 500 Index. Skipping.

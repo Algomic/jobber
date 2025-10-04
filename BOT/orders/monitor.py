@@ -45,8 +45,10 @@ import asyncio
 from aiogram import Bot, Dispatcher, html
 from telegram_update import send_trade_signal
 import sqlite3
-from telegram_bot import bot
+from telegram_bot import bot, send_signal_to_subscribers
 import asyncio
+import multiprocessing as mp
+
 
 
 
@@ -104,57 +106,117 @@ def is_signal_date_valid(signal_time, tolerance_minutes=2):
 conn = sqlite3.connect("subscribers.db")
 cursor = conn.cursor()
 
-def get_subscribers():
-    cursor.execute("SELECT chat_id FROM subscribers")
-    return [row[0] for row in cursor.fetchall()]
 
-def send_trade_signal_sync(signal_message, loop):
-    subscribers = get_subscribers()
-    for chat_id in subscribers:
-        asyncio.run_coroutine_threadsafe(
-            bot.send_message(chat_id=chat_id, text=signal_message),
-            loop
-        )
-
+def clear_queue(q):
+    """Remove all items from the queue."""
+    while not q.empty():
+        try:
+            q.get_nowait()
+        except Exception:
+            break
 
 def timing_decorator(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()  # Start time before calling the function
         result = func(*args, **kwargs)
         end_time = time.time()    # End time after calling the function
-        logger.info(f"{func.__name__} ran for {end_time - start_time:.4f} seconds")
+        logger.info(f"{func.__name__} ran for {(end_time - start_time)/60:.2f} minutes")
+        
         return result
     return wrapper
 
+# @timing_decorator
+# def monitor_asset(models, signal_queue, session_ON=True, max_open_trades=2, wake=2):
+#     """Function to monitor assets and process signals."""
+#     def is_time_to_check():
+#         """Checks if the current time is aligned with the 2-minute interval."""
+#         now = datetime.now(timezone.utc) # .strftime('%Y-%m-%d %H:%M:%S') # timezone.utc
+#         return now.minute % 15 == 0 and now.second < 60  # Allow a 2-second window
+
+#     while session_ON:
+#         try:
+#             # Fetch signals for all assets
+# #             assets_signal = sig(models)
+
+#             # Debugging output for assets_signal
+# #             print(f"Assets Signal: {assets_signal}")
+
+#             # Process each asset in the signal data
+#             for asset, signal in sig(models).items():
+# #                 print(f"Processing {asset}, Signal: {signal}")
+
+#                 if signal is None:
+#                     continue
+
+#                 if asset not in used_signals:
+#                     used_signals[asset] = set()
+#                 if asset not in open_trades:
+#                     open_trades[asset] = 0
+
+#                 if is_time_to_check(): 
+#                     update_open_trades()
+#                     logger.info(f"Open trades updated for {asset}")
+
+#                     if open_trades.get(asset, 0) >= max_open_trades:
+#                         logger.warning(f"Max open trades reached for {asset}. Skipping.")
+#                         continue
+
+#                     signal_id = signal["Signal ID"]
+#                     signal_time = signal["Date"]
+
+#                     with signal_lock:
+#                         if signal_id in used_signals[asset]:
+#                             logger.warning(f"Signal {signal_id} already used for {asset}. Skipping.")
+#                             continue
+# #                         used_signals[asset].add(signal_id)
+
+#                     try:
+#                         if is_signal_date_valid(signal_time):
+#                             orders(asset, signal, open_trades, signal_lock, used_signals)
+#                             # Instead of sending notification directly, put signal in queue
+#                             signal_queue.put(signal)
+#                         else:
+#                             logger.warning(f"Signal time {signal_time} is not valid for {asset}. Skipping.")
+                           
+#                     except Exception as e:
+#                         logger.error(f"Failed to execute order for {asset}: {e}")
+
+#         except KeyboardInterrupt:
+#             logger.info("Shutting down monitor...")
+#             session_ON = False
+#         except Exception as e:
+#             logger.fatal(f"Unexpected error: {e}")
+#         time.sleep(wake * 60)  # Sleep for 'wake' minutes before next check
+
+
+
+
+
+
 @timing_decorator
-def monitor_asset(models, bot, loop, session_ON=True, max_open_trades=3, wake=2):
-    """Function to monitor assets and process signals."""
+def monitor_asset(models, signal_queue, session_ON=True, max_open_trades=2, wake=2):
     def is_time_to_check():
-        """Checks if the current time is aligned with the 2-minute interval."""
-        now = datetime.now(timezone.utc) # .strftime('%Y-%m-%d %H:%M:%S') # timezone.utc
-        return now.minute % 15 == 0 and now.second < 60  # Allow a 2-second window
+        now = datetime.now(timezone.utc)
+        return now.minute % 15 == 0 and now.second < 60
 
     while session_ON:
         try:
-            # Fetch signals for all assets
-#             assets_signal = sig(models)
+            # Clear the queue at the start of each loop
+            clear_queue(signal_queue)
 
-            # Debugging output for assets_signal
-#             print(f"Assets Signal: {assets_signal}")
-
-            # Process each asset in the signal data
             for asset, signal in sig(models).items():
-#                 print(f"Processing {asset}, Signal: {signal}")
-
                 if signal is None:
                     continue
+
+                signal_id = signal["Signal ID"]
+                signal_time = signal["Date"]
 
                 if asset not in used_signals:
                     used_signals[asset] = set()
                 if asset not in open_trades:
                     open_trades[asset] = 0
 
-                if is_time_to_check(): 
+                if is_time_to_check():
                     update_open_trades()
                     logger.info(f"Open trades updated for {asset}")
 
@@ -162,52 +224,25 @@ def monitor_asset(models, bot, loop, session_ON=True, max_open_trades=3, wake=2)
                         logger.warning(f"Max open trades reached for {asset}. Skipping.")
                         continue
 
-                    signal_id = signal["Signal ID"]
-                    signal_time = signal["Date"]
-
                     with signal_lock:
+                        # Only process if signal_id is not already used
                         if signal_id in used_signals[asset]:
-                            logger.warning(f"Signal {signal_id} already used for {asset}. Skipping.")
+                            logger.info(f"Signal {signal_id} already used for {asset}. Skipping.")
                             continue
-#                         used_signals[asset].add(signal_id)
 
                     try:
                         if is_signal_date_valid(signal_time):
+                            # Place order; used_signals will be updated in request.py after success
                             orders(asset, signal, open_trades, signal_lock, used_signals)
-
-#                             used_signals[asset].add(signal_id)
-#                             open_trades[asset] += 1
-#                             print(f"Order executed for {asset}")
-
-                            # Send Telegram notification
-                            signal_message = (
-                                f"📢 Trade Signal\n"
-                                f"Asset: {signal['Asset']}\n"
-                                f"Trend: {signal['Trend']}\n"
-                                f"Entry: {signal['Entry Price']}\n"
-                                f"SL: {signal['Stop Loss']}\n"
-                                f"TP: {signal['Take Profit']}\n"
-                                f"Signal ID: {signal['Signal ID']}"
-                            )
-
-                            send_trade_signal_sync(signal_message, loop)
-
-
-                            
+                            signal_queue.put(signal)
                         else:
                             logger.warning(f"Signal time {signal_time} is not valid for {asset}. Skipping.")
-                            
                     except Exception as e:
                         logger.error(f"Failed to execute order for {asset}: {e}")
-
-            # current_time = datetime.now()
-            # next_check = (current_time // 120 + 1) * 120
-            # time_to_sleep = next_check - current_time
-            # # Sleep briefly to avoid high CPU utilization
-            # time.sleep(1)
 
         except KeyboardInterrupt:
             logger.info("Shutting down monitor...")
             session_ON = False
         except Exception as e:
             logger.fatal(f"Unexpected error: {e}")
+        # time.sleep(wake * 60)  # Sleep for 'wake' minutes before next check
