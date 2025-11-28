@@ -35,3 +35,226 @@ Login: 40761020
 [2025-10-04 10:15:41,897] [WARNING] Signal time 2025-10-04 08:15:00 is not valid for Crash 500 Index. Skipping.
 [2025-10-04 10:15:41,985] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
 [2025-10-04 10:19:42,453] [CRITICAL] Unexpected error: 'time'
+[2025-10-04 10:24:46,315] [INFO] Subscriber cache loaded: 3 users
+[2025-10-04 10:24:46,327] [INFO] Starting the app...
+[2025-10-04 10:24:46,327] [WARNING] This might be risky.
+[2025-10-04 10:24:46,327] [CRITICAL] This is a heavy duty program !!!
+[2025-10-04 10:24:46,342] [INFO] Mt5 terminal initiated successfully!. 
+[2025-10-04 10:24:46,343] [INFO] Terminal successfully initiated.
+[2025-10-04 10:24:46,343] [INFO] Account Details
+Login: 40761020
+[2025-10-04 10:24:46,343] [INFO] Balance: 9917.41
+[2025-10-04 10:24:46,343] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-10-04 10:24:46,343] [INFO] Successfully logged in.
+[2025-10-04 10:24:46,345] [INFO] Starting model build for Boom 1000 Index...
+[2025-10-04 10:24:46,361] [INFO] Starting model build for Boom 500 Index...
+[2025-10-04 10:24:46,376] [INFO] Starting model build for Crash 1000 Index...
+[2025-10-04 10:24:46,486] [INFO] Starting model build for Crash 500 Index...
+[2025-10-04 10:24:46,490] [INFO] Starting model build for Step Index...
+[2025-10-04 10:24:46,640] [INFO] Starting model build for Jump 100 Index...
+[2025-10-04 10:24:50,590] [INFO] Mean accuracy: 0.95
+[2025-10-04 10:24:50,591] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-10-04 10:24:50,959] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-10-04 10:24:50,964] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-10-04 10:24:50,966] [INFO] Mean accuracy: 0.93
+[2025-10-04 10:24:50,966] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.93
+[2025-10-04 10:24:50,974] [INFO] Mean accuracy: 0.97
+[2025-10-04 10:24:50,976] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-10-04 10:24:50,979] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-10-04 10:24:51,007] [INFO] Start polling
+[2025-10-04 10:24:51,011] [INFO] Subscriber cache refreshed
+[2025-10-04 10:24:51,404] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-10-04 10:30:00,066] [INFO] Updated open trades: {'Step Index': 1}
+[2025-10-04 10:30:00,066] [INFO] Open trades updated for Jump 100 Index
+[2025-10-04 10:30:00,067] [WARNING] Signal time 2025-10-04 07:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-10-04 10:30:00,067] [INFO] Open trades updated for Step Index
+[2025-10-04 10:30:00,068] [WARNING] Signal time 2025-10-04 03:30:00 is not valid for Step Index. Skipping.
+[2025-10-04 10:30:00,068] [INFO] Open trades updated for Crash 500 Index
+[2025-10-04 10:30:00,068] [WARNING] Signal time 2025-10-04 08:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-10-04 14:14:39,332] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-10-04 14:14:39,354] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-10-04 14:14:48,230] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network connection was aborted by the local system]
+[2025-10-04 14:14:48,269] [WARNING] Sleep for 1.275682 seconds and try again... (tryings = 1, bot id = 7426056292)
+[2025-10-04 14:14:49,560] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+[2025-10-04 14:14:49,586] [WARNING] Sleep for 1.677106 seconds and try again... (tryings = 2, bot id = 7426056292)
+[2025-10-04 14:14:51,297] [WARNING] Sleep for 2.037944 seconds and try again... (tryings = 3, bot id = 7426056292)
+[2025-10-04 14:14:53,382] [WARNING] Sleep for 2.696897 seconds and try again... (tryings = 4, bot id = 7426056292)
+[2025-10-04 14:14:56,114] [WARNING] Sleep for 3.621651 seconds and try again... (tryings = 5, bot id = 7426056292)
+[2025-10-04 14:14:59,784] [WARNING] Sleep for 4.698799 seconds and try again... (tryings = 6, bot id = 7426056292)
+[2025-10-04 14:15:04,544] [WARNING] Sleep for 5.010397 seconds and try again... (tryings = 7, bot id = 7426056292)
+[2025-10-04 14:15:09,614] [WARNING] Sleep for 5.003245 seconds and try again... (tryings = 8, bot id = 7426056292)
+[2025-10-04 14:15:14,635] [WARNING] Sleep for 5.024095 seconds and try again... (tryings = 9, bot id = 7426056292)
+[2025-10-04 14:15:19,681] [WARNING] Sleep for 5.059115 seconds and try again... (tryings = 10, bot id = 7426056292)
+[2025-10-04 14:15:24,788] [WARNING] Sleep for 5.020558 seconds and try again... (tryings = 11, bot id = 7426056292)
+[2025-10-04 14:15:29,860] [WARNING] Sleep for 4.892621 seconds and try again... (tryings = 12, bot id = 7426056292)
+[2025-10-04 14:15:34,799] [WARNING] Sleep for 4.994083 seconds and try again... (tryings = 13, bot id = 7426056292)
+[2025-10-04 14:15:39,908] [WARNING] Sleep for 5.031808 seconds and try again... (tryings = 14, bot id = 7426056292)
+[2025-10-04 14:15:44,984] [WARNING] Sleep for 5.089362 seconds and try again... (tryings = 15, bot id = 7426056292)
+[2025-10-04 14:15:50,109] [WARNING] Sleep for 5.047701 seconds and try again... (tryings = 16, bot id = 7426056292)
+[2025-10-04 14:15:55,189] [WARNING] Sleep for 4.997778 seconds and try again... (tryings = 17, bot id = 7426056292)
+[2025-10-04 14:16:00,232] [WARNING] Sleep for 5.060100 seconds and try again... (tryings = 18, bot id = 7426056292)
+[2025-10-04 14:16:05,356] [WARNING] Sleep for 5.082746 seconds and try again... (tryings = 19, bot id = 7426056292)
+[2025-10-04 14:16:10,479] [WARNING] Sleep for 4.914723 seconds and try again... (tryings = 20, bot id = 7426056292)
+[2025-10-04 14:16:15,412] [WARNING] Sleep for 4.891185 seconds and try again... (tryings = 21, bot id = 7426056292)
+[2025-10-04 14:16:20,372] [WARNING] Sleep for 4.973425 seconds and try again... (tryings = 22, bot id = 7426056292)
+[2025-10-04 14:16:25,380] [WARNING] Sleep for 4.977566 seconds and try again... (tryings = 23, bot id = 7426056292)
+[2025-10-04 14:16:30,391] [WARNING] Sleep for 4.952415 seconds and try again... (tryings = 24, bot id = 7426056292)
+[2025-10-04 14:16:35,397] [WARNING] Sleep for 5.081343 seconds and try again... (tryings = 25, bot id = 7426056292)
+[2025-10-04 14:16:40,520] [WARNING] Sleep for 4.979577 seconds and try again... (tryings = 26, bot id = 7426056292)
+[2025-10-04 14:16:45,512] [WARNING] Sleep for 4.994493 seconds and try again... (tryings = 27, bot id = 7426056292)
+[2025-10-04 14:16:50,517] [WARNING] Sleep for 5.106203 seconds and try again... (tryings = 28, bot id = 7426056292)
+[2025-10-04 14:16:55,653] [WARNING] Sleep for 5.093470 seconds and try again... (tryings = 29, bot id = 7426056292)
+[2025-10-04 14:17:00,817] [WARNING] Sleep for 4.892198 seconds and try again... (tryings = 30, bot id = 7426056292)
+[2025-10-04 14:17:05,732] [WARNING] Sleep for 4.909071 seconds and try again... (tryings = 31, bot id = 7426056292)
+[2025-10-04 14:17:10,682] [WARNING] Sleep for 4.896122 seconds and try again... (tryings = 32, bot id = 7426056292)
+[2025-10-04 14:17:15,616] [WARNING] Sleep for 5.052118 seconds and try again... (tryings = 33, bot id = 7426056292)
+[2025-10-04 14:17:20,702] [WARNING] Sleep for 4.935796 seconds and try again... (tryings = 34, bot id = 7426056292)
+[2025-10-04 14:17:25,662] [WARNING] Sleep for 4.852148 seconds and try again... (tryings = 35, bot id = 7426056292)
+[2025-10-04 14:17:30,548] [WARNING] Sleep for 5.044986 seconds and try again... (tryings = 36, bot id = 7426056292)
+[2025-10-04 14:17:35,626] [WARNING] Sleep for 5.029292 seconds and try again... (tryings = 37, bot id = 7426056292)
+[2025-10-04 14:17:40,725] [WARNING] Sleep for 4.928747 seconds and try again... (tryings = 38, bot id = 7426056292)
+[2025-10-04 14:17:45,723] [WARNING] Sleep for 5.010071 seconds and try again... (tryings = 39, bot id = 7426056292)
+[2025-10-04 14:17:50,777] [WARNING] Sleep for 5.130498 seconds and try again... (tryings = 40, bot id = 7426056292)
+[2025-10-04 14:17:55,951] [WARNING] Sleep for 4.971502 seconds and try again... (tryings = 41, bot id = 7426056292)
+[2025-10-04 14:18:00,953] [WARNING] Sleep for 4.853109 seconds and try again... (tryings = 42, bot id = 7426056292)
+[2025-10-04 14:18:05,825] [WARNING] Sleep for 5.096870 seconds and try again... (tryings = 43, bot id = 7426056292)
+[2025-10-04 14:18:10,970] [WARNING] Sleep for 5.138264 seconds and try again... (tryings = 44, bot id = 7426056292)
+[2025-10-04 14:18:16,186] [WARNING] Sleep for 5.050718 seconds and try again... (tryings = 45, bot id = 7426056292)
+[2025-10-04 14:18:21,334] [WARNING] Sleep for 4.948174 seconds and try again... (tryings = 46, bot id = 7426056292)
+[2025-10-04 14:18:26,348] [WARNING] Sleep for 4.833171 seconds and try again... (tryings = 47, bot id = 7426056292)
+[2025-10-04 14:18:31,252] [WARNING] Sleep for 5.007436 seconds and try again... (tryings = 48, bot id = 7426056292)
+[2025-10-04 14:18:36,297] [WARNING] Sleep for 5.038928 seconds and try again... (tryings = 49, bot id = 7426056292)
+[2025-10-04 14:18:41,372] [WARNING] Sleep for 5.045343 seconds and try again... (tryings = 50, bot id = 7426056292)
+[2025-10-04 14:18:46,473] [WARNING] Sleep for 5.017930 seconds and try again... (tryings = 51, bot id = 7426056292)
+[2025-10-04 14:18:51,524] [WARNING] Sleep for 4.868803 seconds and try again... (tryings = 52, bot id = 7426056292)
+[2025-10-04 14:18:56,450] [WARNING] Sleep for 5.053282 seconds and try again... (tryings = 53, bot id = 7426056292)
+[2025-10-04 14:19:01,555] [WARNING] Sleep for 5.112451 seconds and try again... (tryings = 54, bot id = 7426056292)
+[2025-10-04 14:19:06,740] [WARNING] Sleep for 5.062927 seconds and try again... (tryings = 55, bot id = 7426056292)
+[2025-10-04 14:19:11,842] [WARNING] Sleep for 5.006573 seconds and try again... (tryings = 56, bot id = 7426056292)
+[2025-10-04 14:19:16,913] [WARNING] Sleep for 5.051147 seconds and try again... (tryings = 57, bot id = 7426056292)
+[2025-10-04 14:19:22,006] [WARNING] Sleep for 5.048435 seconds and try again... (tryings = 58, bot id = 7426056292)
+[2025-10-04 14:19:27,070] [WARNING] Sleep for 5.222650 seconds and try again... (tryings = 59, bot id = 7426056292)
+[2025-10-04 14:19:32,340] [WARNING] Sleep for 4.766835 seconds and try again... (tryings = 60, bot id = 7426056292)
+[2025-10-04 14:19:37,175] [WARNING] Sleep for 4.968191 seconds and try again... (tryings = 61, bot id = 7426056292)
+[2025-10-04 14:19:42,189] [WARNING] Sleep for 5.022127 seconds and try again... (tryings = 62, bot id = 7426056292)
+[2025-10-04 14:19:47,253] [WARNING] Sleep for 5.082648 seconds and try again... (tryings = 63, bot id = 7426056292)
+[2025-10-04 14:19:52,373] [WARNING] Sleep for 5.156002 seconds and try again... (tryings = 64, bot id = 7426056292)
+[2025-10-04 14:19:57,572] [WARNING] Sleep for 4.894359 seconds and try again... (tryings = 65, bot id = 7426056292)
+[2025-10-04 14:20:02,508] [WARNING] Sleep for 5.080676 seconds and try again... (tryings = 66, bot id = 7426056292)
+[2025-10-04 14:20:07,646] [WARNING] Sleep for 5.019326 seconds and try again... (tryings = 67, bot id = 7426056292)
+[2025-10-04 14:20:12,733] [WARNING] Sleep for 5.092978 seconds and try again... (tryings = 68, bot id = 7426056292)
+[2025-10-04 14:20:17,849] [WARNING] Sleep for 5.100737 seconds and try again... (tryings = 69, bot id = 7426056292)
+[2025-10-04 14:20:23,016] [WARNING] Sleep for 5.187863 seconds and try again... (tryings = 70, bot id = 7426056292)
+[2025-10-04 14:20:28,261] [WARNING] Sleep for 5.056470 seconds and try again... (tryings = 71, bot id = 7426056292)
+[2025-10-04 14:20:33,351] [WARNING] Sleep for 4.915721 seconds and try again... (tryings = 72, bot id = 7426056292)
+[2025-10-04 14:20:38,308] [WARNING] Sleep for 4.966484 seconds and try again... (tryings = 73, bot id = 7426056292)
+[2025-10-04 14:20:43,313] [WARNING] Sleep for 4.962421 seconds and try again... (tryings = 74, bot id = 7426056292)
+[2025-10-04 14:20:48,343] [WARNING] Sleep for 4.990530 seconds and try again... (tryings = 75, bot id = 7426056292)
+[2025-10-04 14:20:53,433] [WARNING] Sleep for 5.122037 seconds and try again... (tryings = 76, bot id = 7426056292)
+[2025-10-04 14:20:58,594] [WARNING] Sleep for 5.142896 seconds and try again... (tryings = 77, bot id = 7426056292)
+[2025-10-04 14:21:03,792] [WARNING] Sleep for 5.021626 seconds and try again... (tryings = 78, bot id = 7426056292)
+[2025-10-04 14:21:08,860] [WARNING] Sleep for 5.275651 seconds and try again... (tryings = 79, bot id = 7426056292)
+[2025-10-04 14:21:14,177] [WARNING] Sleep for 5.115516 seconds and try again... (tryings = 80, bot id = 7426056292)
+[2025-10-04 14:21:19,357] [WARNING] Sleep for 5.088791 seconds and try again... (tryings = 81, bot id = 7426056292)
+[2025-10-04 14:21:24,500] [WARNING] Sleep for 5.055881 seconds and try again... (tryings = 82, bot id = 7426056292)
+[2025-10-04 14:21:29,611] [WARNING] Sleep for 5.100657 seconds and try again... (tryings = 83, bot id = 7426056292)
+[2025-10-04 14:21:34,779] [WARNING] Sleep for 4.998569 seconds and try again... (tryings = 84, bot id = 7426056292)
+[2025-10-04 14:21:39,859] [WARNING] Sleep for 5.087833 seconds and try again... (tryings = 85, bot id = 7426056292)
+[2025-10-04 14:21:44,994] [WARNING] Sleep for 4.913140 seconds and try again... (tryings = 86, bot id = 7426056292)
+[2025-10-04 14:21:49,962] [WARNING] Sleep for 5.067829 seconds and try again... (tryings = 87, bot id = 7426056292)
+[2025-10-04 14:21:55,079] [WARNING] Sleep for 4.820986 seconds and try again... (tryings = 88, bot id = 7426056292)
+[2025-10-04 14:21:59,965] [WARNING] Sleep for 4.819390 seconds and try again... (tryings = 89, bot id = 7426056292)
+[2025-10-04 14:22:04,848] [WARNING] Sleep for 5.073044 seconds and try again... (tryings = 90, bot id = 7426056292)
+[2025-10-04 14:22:09,967] [WARNING] Sleep for 4.959065 seconds and try again... (tryings = 91, bot id = 7426056292)
+[2025-10-04 14:22:14,965] [WARNING] Sleep for 4.974065 seconds and try again... (tryings = 92, bot id = 7426056292)
+[2025-10-04 14:22:19,987] [WARNING] Sleep for 4.833191 seconds and try again... (tryings = 93, bot id = 7426056292)
+[2025-10-04 14:22:24,855] [WARNING] Sleep for 5.034709 seconds and try again... (tryings = 94, bot id = 7426056292)
+[2025-10-04 14:22:29,926] [WARNING] Sleep for 5.126751 seconds and try again... (tryings = 95, bot id = 7426056292)
+[2025-10-04 14:22:35,105] [WARNING] Sleep for 5.025720 seconds and try again... (tryings = 96, bot id = 7426056292)
+[2025-10-04 14:22:40,158] [WARNING] Sleep for 5.119860 seconds and try again... (tryings = 97, bot id = 7426056292)
+[2025-10-04 14:22:45,338] [WARNING] Sleep for 4.941934 seconds and try again... (tryings = 98, bot id = 7426056292)
+[2025-10-04 14:22:50,330] [WARNING] Sleep for 4.880086 seconds and try again... (tryings = 99, bot id = 7426056292)
+[2025-10-04 14:22:55,260] [WARNING] Sleep for 5.213468 seconds and try again... (tryings = 100, bot id = 7426056292)
+[2025-10-04 14:23:00,518] [WARNING] Sleep for 5.042935 seconds and try again... (tryings = 101, bot id = 7426056292)
+[2025-10-04 14:23:05,613] [WARNING] Sleep for 4.950047 seconds and try again... (tryings = 102, bot id = 7426056292)
+[2025-10-04 14:23:10,615] [WARNING] Sleep for 4.936704 seconds and try again... (tryings = 103, bot id = 7426056292)
+[2025-10-04 14:23:15,613] [WARNING] Sleep for 5.056933 seconds and try again... (tryings = 104, bot id = 7426056292)
+[2025-10-04 14:23:20,720] [WARNING] Sleep for 4.994216 seconds and try again... (tryings = 105, bot id = 7426056292)
+[2025-10-04 14:23:25,739] [WARNING] Sleep for 4.672137 seconds and try again... (tryings = 106, bot id = 7426056292)
+[2025-10-04 14:23:30,457] [WARNING] Sleep for 5.196264 seconds and try again... (tryings = 107, bot id = 7426056292)
+[2025-10-04 14:23:35,714] [WARNING] Sleep for 4.904068 seconds and try again... (tryings = 108, bot id = 7426056292)
+[2025-10-04 14:23:40,677] [WARNING] Sleep for 4.928412 seconds and try again... (tryings = 109, bot id = 7426056292)
+[2025-10-04 14:23:45,630] [WARNING] Sleep for 4.943629 seconds and try again... (tryings = 110, bot id = 7426056292)
+[2025-10-04 14:23:50,637] [WARNING] Sleep for 5.118864 seconds and try again... (tryings = 111, bot id = 7426056292)
+[2025-10-04 14:23:55,811] [WARNING] Sleep for 4.967082 seconds and try again... (tryings = 112, bot id = 7426056292)
+[2025-10-04 14:24:00,818] [WARNING] Sleep for 4.913623 seconds and try again... (tryings = 113, bot id = 7426056292)
+[2025-10-04 14:24:05,773] [WARNING] Sleep for 4.851645 seconds and try again... (tryings = 114, bot id = 7426056292)
+[2025-10-04 14:24:10,644] [WARNING] Sleep for 4.974160 seconds and try again... (tryings = 115, bot id = 7426056292)
+[2025-10-04 14:24:15,658] [WARNING] Sleep for 5.022365 seconds and try again... (tryings = 116, bot id = 7426056292)
+[2025-10-04 14:24:20,733] [WARNING] Sleep for 4.834841 seconds and try again... (tryings = 117, bot id = 7426056292)
+[2025-10-04 14:24:25,631] [WARNING] Sleep for 4.924639 seconds and try again... (tryings = 118, bot id = 7426056292)
+[2025-10-04 14:24:30,598] [WARNING] Sleep for 4.921760 seconds and try again... (tryings = 119, bot id = 7426056292)
+[2025-10-04 14:24:35,539] [WARNING] Sleep for 5.061513 seconds and try again... (tryings = 120, bot id = 7426056292)
+[2025-10-04 14:24:40,653] [WARNING] Sleep for 4.955705 seconds and try again... (tryings = 121, bot id = 7426056292)
+[2025-10-04 14:24:45,667] [WARNING] Sleep for 4.845881 seconds and try again... (tryings = 122, bot id = 7426056292)
+[2025-10-04 14:24:50,556] [WARNING] Sleep for 4.943260 seconds and try again... (tryings = 123, bot id = 7426056292)
+[2025-10-04 14:24:55,586] [WARNING] Sleep for 5.100539 seconds and try again... (tryings = 124, bot id = 7426056292)
+[2025-10-04 14:25:00,708] [WARNING] Sleep for 5.169691 seconds and try again... (tryings = 125, bot id = 7426056292)
+[2025-10-04 14:25:05,924] [WARNING] Sleep for 5.113050 seconds and try again... (tryings = 126, bot id = 7426056292)
+[2025-10-04 14:25:11,082] [WARNING] Sleep for 4.903668 seconds and try again... (tryings = 127, bot id = 7426056292)
+[2025-10-04 14:25:15,993] [WARNING] Sleep for 4.815909 seconds and try again... (tryings = 128, bot id = 7426056292)
+[2025-10-04 14:25:20,880] [WARNING] Sleep for 4.880656 seconds and try again... (tryings = 129, bot id = 7426056292)
+[2025-10-04 14:25:25,802] [WARNING] Sleep for 4.945820 seconds and try again... (tryings = 130, bot id = 7426056292)
+[2025-10-04 14:25:30,768] [WARNING] Sleep for 4.795725 seconds and try again... (tryings = 131, bot id = 7426056292)
+[2025-10-04 14:25:35,604] [WARNING] Sleep for 5.123512 seconds and try again... (tryings = 132, bot id = 7426056292)
+[2025-10-04 14:25:40,816] [WARNING] Sleep for 4.926531 seconds and try again... (tryings = 133, bot id = 7426056292)
+[2025-10-04 14:25:45,791] [WARNING] Sleep for 4.861533 seconds and try again... (tryings = 134, bot id = 7426056292)
+[2025-10-04 14:25:50,701] [WARNING] Sleep for 4.851319 seconds and try again... (tryings = 135, bot id = 7426056292)
+[2025-10-04 14:25:55,596] [WARNING] Sleep for 5.026000 seconds and try again... (tryings = 136, bot id = 7426056292)
+[2025-10-04 14:26:00,704] [WARNING] Sleep for 5.065510 seconds and try again... (tryings = 137, bot id = 7426056292)
+[2025-10-04 14:26:05,805] [WARNING] Sleep for 5.077190 seconds and try again... (tryings = 138, bot id = 7426056292)
+[2025-10-04 14:26:10,936] [WARNING] Sleep for 5.170315 seconds and try again... (tryings = 139, bot id = 7426056292)
+[2025-10-04 14:26:16,159] [WARNING] Sleep for 5.067662 seconds and try again... (tryings = 140, bot id = 7426056292)
+[2025-10-04 14:26:21,262] [WARNING] Sleep for 4.928227 seconds and try again... (tryings = 141, bot id = 7426056292)
+[2025-10-04 14:26:26,261] [WARNING] Sleep for 4.944251 seconds and try again... (tryings = 142, bot id = 7426056292)
+[2025-10-04 14:26:31,263] [WARNING] Sleep for 4.972895 seconds and try again... (tryings = 143, bot id = 7426056292)
+[2025-10-04 14:26:36,291] [WARNING] Sleep for 5.077693 seconds and try again... (tryings = 144, bot id = 7426056292)
+[2025-10-04 14:26:41,430] [WARNING] Sleep for 5.043294 seconds and try again... (tryings = 145, bot id = 7426056292)
+[2025-10-04 14:26:46,511] [WARNING] Sleep for 5.187389 seconds and try again... (tryings = 146, bot id = 7426056292)
+[2025-10-04 14:26:51,748] [WARNING] Sleep for 4.906723 seconds and try again... (tryings = 147, bot id = 7426056292)
+[2025-10-04 14:26:56,703] [WARNING] Sleep for 5.029990 seconds and try again... (tryings = 148, bot id = 7426056292)
+[2025-10-04 14:27:01,779] [WARNING] Sleep for 5.150192 seconds and try again... (tryings = 149, bot id = 7426056292)
+[2025-10-04 14:27:06,988] [WARNING] Sleep for 5.016900 seconds and try again... (tryings = 150, bot id = 7426056292)
+[2025-10-04 14:27:12,069] [WARNING] Sleep for 4.919368 seconds and try again... (tryings = 151, bot id = 7426056292)
+[2025-10-04 14:27:17,050] [WARNING] Sleep for 4.920400 seconds and try again... (tryings = 152, bot id = 7426056292)
+[2025-10-04 14:27:21,998] [WARNING] Sleep for 5.087767 seconds and try again... (tryings = 153, bot id = 7426056292)
+[2025-10-04 14:27:27,142] [WARNING] Sleep for 4.924744 seconds and try again... (tryings = 154, bot id = 7426056292)
+[2025-10-04 14:27:32,119] [WARNING] Sleep for 5.166236 seconds and try again... (tryings = 155, bot id = 7426056292)
+[2025-10-04 14:27:37,350] [WARNING] Sleep for 5.062558 seconds and try again... (tryings = 156, bot id = 7426056292)
+[2025-10-04 14:27:42,436] [WARNING] Sleep for 5.133373 seconds and try again... (tryings = 157, bot id = 7426056292)
+[2025-10-04 14:27:47,617] [WARNING] Sleep for 4.802421 seconds and try again... (tryings = 158, bot id = 7426056292)
+[2025-10-04 14:27:52,497] [WARNING] Sleep for 5.055381 seconds and try again... (tryings = 159, bot id = 7426056292)
+[2025-10-04 14:27:57,606] [WARNING] Sleep for 5.061786 seconds and try again... (tryings = 160, bot id = 7426056292)
+[2025-10-04 14:28:02,702] [WARNING] Sleep for 5.011051 seconds and try again... (tryings = 161, bot id = 7426056292)
+[2025-10-04 14:28:07,801] [WARNING] Sleep for 5.092962 seconds and try again... (tryings = 162, bot id = 7426056292)
+[2025-10-04 14:28:12,937] [WARNING] Sleep for 5.012637 seconds and try again... (tryings = 163, bot id = 7426056292)
+[2025-10-04 14:28:17,995] [WARNING] Sleep for 5.126376 seconds and try again... (tryings = 164, bot id = 7426056292)
+[2025-10-04 14:28:23,183] [WARNING] Sleep for 4.969749 seconds and try again... (tryings = 165, bot id = 7426056292)
+[2025-10-04 14:28:28,191] [WARNING] Sleep for 5.138462 seconds and try again... (tryings = 166, bot id = 7426056292)
+[2025-10-04 14:28:33,371] [WARNING] Sleep for 4.955340 seconds and try again... (tryings = 167, bot id = 7426056292)
+[2025-10-04 14:28:38,354] [WARNING] Sleep for 4.857411 seconds and try again... (tryings = 168, bot id = 7426056292)
+[2025-10-04 14:28:43,280] [WARNING] Sleep for 5.004002 seconds and try again... (tryings = 169, bot id = 7426056292)
+[2025-10-04 14:28:48,351] [WARNING] Sleep for 5.137818 seconds and try again... (tryings = 170, bot id = 7426056292)
+[2025-10-04 14:28:53,500] [WARNING] Sleep for 4.870439 seconds and try again... (tryings = 171, bot id = 7426056292)
+[2025-10-04 14:28:58,431] [WARNING] Sleep for 4.872047 seconds and try again... (tryings = 172, bot id = 7426056292)
+[2025-10-04 14:29:03,332] [WARNING] Sleep for 5.103091 seconds and try again... (tryings = 173, bot id = 7426056292)
+[2025-10-04 14:29:08,498] [WARNING] Sleep for 5.178258 seconds and try again... (tryings = 174, bot id = 7426056292)
+[2025-10-04 14:29:13,727] [WARNING] Sleep for 4.929970 seconds and try again... (tryings = 175, bot id = 7426056292)
+[2025-10-04 14:29:18,703] [WARNING] Sleep for 4.916336 seconds and try again... (tryings = 176, bot id = 7426056292)
+[2025-10-04 14:29:23,697] [WARNING] Sleep for 5.029183 seconds and try again... (tryings = 177, bot id = 7426056292)
+[2025-10-04 14:29:28,770] [WARNING] Sleep for 5.011648 seconds and try again... (tryings = 178, bot id = 7426056292)
+[2025-10-04 14:29:33,840] [WARNING] Sleep for 5.009909 seconds and try again... (tryings = 179, bot id = 7426056292)
+[2025-10-04 14:29:38,858] [WARNING] Sleep for 5.135338 seconds and try again... (tryings = 180, bot id = 7426056292)
+[2025-10-04 14:29:43,704] [INFO] Shutting down monitor...
+[2025-10-04 14:29:43,705] [INFO] monitor_asset ran for 244.88 minutes
+[2025-10-04 14:29:44,023] [WARNING] Sleep for 5.097774 seconds and try again... (tryings = 181, bot id = 7426056292)

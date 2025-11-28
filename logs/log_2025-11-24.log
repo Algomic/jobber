@@ -1,0 +1,55 @@
+[2025-11-24 10:38:36,106] [INFO] Subscriber cache loaded: 3 users
+[2025-11-24 10:38:36,134] [INFO] Starting the app...
+[2025-11-24 10:38:36,134] [WARNING] This might be risky.
+[2025-11-24 10:38:36,135] [CRITICAL] This is a heavy duty program !!!
+[2025-11-24 10:38:44,866] [INFO] Mt5 terminal initiated successfully!. 
+[2025-11-24 10:38:44,874] [INFO] Terminal successfully initiated.
+[2025-11-24 10:38:44,877] [INFO] Account Details
+Login: 40761020
+[2025-11-24 10:38:44,878] [INFO] Balance: 9911.63
+[2025-11-24 10:38:44,878] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-11-24 10:38:44,878] [INFO] Successfully logged in.
+[2025-11-24 10:38:44,888] [INFO] Starting model build for Boom 1000 Index...
+[2025-11-24 10:38:48,882] [INFO] Starting model build for Boom 500 Index...
+[2025-11-24 10:38:48,928] [INFO] Starting model build for Crash 1000 Index...
+[2025-11-24 10:39:46,361] [INFO] Starting model build for Crash 500 Index...
+[2025-11-24 10:39:46,553] [INFO] Starting model build for Step Index...
+[2025-11-24 10:39:46,628] [INFO] Starting model build for Jump 100 Index...
+[2025-11-24 10:39:54,019] [INFO] Mean accuracy: 0.95
+[2025-11-24 10:39:54,025] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-11-24 10:39:54,757] [INFO] Mean accuracy: 0.96
+[2025-11-24 10:39:54,760] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-11-24 10:39:54,899] [INFO] Mean accuracy: 0.97
+[2025-11-24 10:39:54,900] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-11-24 10:39:54,948] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-11-24 10:39:54,953] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-11-24 10:39:54,953] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-11-24 10:39:55,136] [INFO] Start polling
+[2025-11-24 10:39:55,234] [INFO] Subscriber cache refreshed
+[2025-11-24 10:39:55,908] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-11-24 10:45:00,107] [INFO] Updated open trades: {'EURUSD': 2}
+[2025-11-24 10:45:00,112] [INFO] Open trades updated for Jump 100 Index
+[2025-11-24 10:45:00,113] [WARNING] Signal time 2025-11-21 16:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-24 10:45:00,114] [INFO] Open trades updated for Crash 1000 Index
+[2025-11-24 10:45:00,114] [WARNING] Signal time 2025-11-24 10:15:00 is not valid for Crash 1000 Index. Skipping.
+[2025-11-24 10:45:00,115] [INFO] Open trades updated for Boom 500 Index
+[2025-11-24 10:45:00,115] [WARNING] Signal time 2025-11-24 07:45:00 is not valid for Boom 500 Index. Skipping.
+[2025-11-24 10:45:00,116] [INFO] Open trades updated for Crash 500 Index
+[2025-11-24 10:45:00,116] [WARNING] Signal time 2025-11-24 03:45:00 is not valid for Crash 500 Index. Skipping.
+[2025-11-24 10:45:00,116] [INFO] Open trades updated for Step Index
+[2025-11-24 10:45:00,116] [WARNING] Signal time 2025-11-24 09:15:00 is not valid for Step Index. Skipping.
+[2025-11-24 11:30:00,061] [WARNING] Signal time 2025-11-24 11:15:00 is not valid for Boom 500 Index. Skipping.
+[2025-11-24 11:30:01,299] [ERROR] Failed to execute order for Boom 500 Index: 'Boom 500 Index'
+[2025-11-24 11:30:01,301] [INFO] Updated open trades: {'EURUSD': 2, 'Boom 500 Index': 1}
+[2025-11-24 11:30:02,634] [INFO] Trade successful for Boom 500 Index. Signal ID 6693e32d-30a4-5ed0-91be-f84da72a7a7e marked as used.
+[2025-11-24 11:30:02,635] [ERROR] Failed to execute order for Boom 500 Index: module 'MetaTrader5' has no attribute 'ORDER_SELL'
+[2025-11-24 11:30:02,637] [INFO] Updated open trades: {'EURUSD': 2, 'Boom 500 Index': 2}
+[2025-11-24 11:30:03,006] [WARNING] Max open trades reached for Boom 500 Index. Skipping.
+[2025-11-24 11:45:00,113] [WARNING] Signal time 2025-11-24 11:30:00 is not valid for Boom 500 Index. Skipping.
+[2025-11-24 11:45:02,574] [INFO] Trade successful for Boom 500 Index. Signal ID 6c5f00b7-4d5a-550d-a8a9-c62ba337780f marked as used.
+[2025-11-24 11:45:03,316] [ERROR] Failed to execute order for Step Index: 'Step Index'
+[2025-11-24 11:45:03,674] [INFO] Updated open trades: {'EURUSD': 2, 'Boom 500 Index': 2, 'Step Index': 1}
+[2025-11-24 11:45:04,409] [INFO] Trade successful for Step Index. Signal ID 6e3b537c-4c00-5cc6-a96a-87be91af7886 marked as used.
+[2025-11-24 11:45:04,410] [ERROR] Failed to execute order for Step Index: module 'MetaTrader5' has no attribute 'ORDER_BUY'
+[2025-11-24 11:45:04,734] [INFO] Updated open trades: {'EURUSD': 2, 'Boom 500 Index': 2, 'Step Index': 2}
+[2025-11-24 11:45:04,738] [WARNING] Max open trades reached for Step Index. Skipping.

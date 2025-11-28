@@ -1,0 +1,39 @@
+[2025-10-05 20:05:34,676] [INFO] Subscriber cache loaded: 3 users
+[2025-10-05 20:05:34,706] [INFO] Starting the app...
+[2025-10-05 20:05:34,706] [WARNING] This might be risky.
+[2025-10-05 20:05:34,708] [CRITICAL] This is a heavy duty program !!!
+[2025-10-05 20:05:43,068] [INFO] Mt5 terminal initiated successfully!. 
+[2025-10-05 20:05:43,069] [INFO] Terminal successfully initiated.
+[2025-10-05 20:05:43,070] [INFO] Account Details
+Login: 40761020
+[2025-10-05 20:05:43,070] [INFO] Balance: 9917.41
+[2025-10-05 20:05:43,070] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-10-05 20:05:43,071] [INFO] Successfully logged in.
+[2025-10-05 20:05:43,073] [INFO] Starting model build for Boom 1000 Index...
+[2025-10-05 20:05:45,338] [INFO] Starting model build for Boom 500 Index...
+[2025-10-05 20:05:45,384] [INFO] Starting model build for Crash 1000 Index...
+[2025-10-05 20:05:45,647] [INFO] Starting model build for Crash 500 Index...
+[2025-10-05 20:05:45,876] [INFO] Starting model build for Step Index...
+[2025-10-05 20:05:45,923] [INFO] Starting model build for Jump 100 Index...
+[2025-10-05 20:05:57,656] [INFO] Mean accuracy: 0.95
+[2025-10-05 20:05:57,657] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-10-05 20:05:58,614] [INFO] Mean accuracy: 0.96
+[2025-10-05 20:05:58,619] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-10-05 20:05:58,645] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-10-05 20:05:58,869] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-10-05 20:05:58,883] [INFO] Mean accuracy: 0.97
+[2025-10-05 20:05:58,884] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-10-05 20:05:58,890] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-10-05 20:05:58,975] [INFO] Start polling
+[2025-10-05 20:05:59,025] [INFO] Subscriber cache refreshed
+[2025-10-05 20:06:00,688] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-10-05 20:15:00,370] [INFO] Updated open trades: {'Step Index': 1}
+[2025-10-05 20:15:00,404] [INFO] Open trades updated for Jump 100 Index
+[2025-10-05 20:15:00,406] [WARNING] Signal time 2025-10-05 17:45:00 is not valid for Jump 100 Index. Skipping.
+[2025-10-05 20:15:00,409] [INFO] Open trades updated for Step Index
+[2025-10-05 20:15:00,409] [WARNING] Signal time 2025-10-04 03:30:00 is not valid for Step Index. Skipping.
+[2025-10-05 21:06:20,101] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-10-05 21:06:20,134] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-10-05 21:06:34,342] [INFO] Connection established (tryings = 1, bot id = 7426056292)
+[2025-10-05 21:47:40,831] [INFO] Shutting down monitor...
+[2025-10-05 21:47:40,837] [INFO] monitor_asset ran for 101.70 minutes
