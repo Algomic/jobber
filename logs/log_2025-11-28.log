@@ -1,0 +1,95 @@
+[2025-11-28 10:39:56,410] [INFO] Subscriber cache loaded: 3 users
+[2025-11-28 10:39:56,425] [INFO] Starting the app...
+[2025-11-28 10:39:56,426] [WARNING] This might be risky.
+[2025-11-28 10:39:56,426] [CRITICAL] This is a heavy duty program !!!
+[2025-11-28 10:39:56,477] [INFO] Mt5 terminal initiated successfully!. 
+[2025-11-28 10:39:56,477] [INFO] Terminal successfully initiated.
+[2025-11-28 10:39:56,477] [INFO] Account Details
+Login: 40761020
+[2025-11-28 10:39:56,477] [INFO] Balance: 9947.67
+[2025-11-28 10:39:56,478] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-11-28 10:39:56,478] [INFO] Successfully logged in.
+[2025-11-28 10:39:56,479] [INFO] Starting model build for Boom 1000 Index...
+[2025-11-28 10:39:56,486] [INFO] Starting model build for Boom 500 Index...
+[2025-11-28 10:39:56,491] [INFO] Starting model build for Crash 1000 Index...
+[2025-11-28 10:39:56,493] [INFO] Starting model build for Crash 500 Index...
+[2025-11-28 10:39:56,496] [INFO] Starting model build for Step Index...
+[2025-11-28 10:39:56,517] [INFO] Starting model build for Jump 100 Index...
+[2025-11-28 10:40:01,692] [INFO] Mean accuracy: 0.95
+[2025-11-28 10:40:01,697] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-11-28 10:40:02,239] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-11-28 10:40:02,267] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-11-28 10:40:02,281] [INFO] Mean accuracy: 0.96
+[2025-11-28 10:40:02,283] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-11-28 10:40:02,283] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-11-28 10:40:02,294] [INFO] Mean accuracy: 0.97
+[2025-11-28 10:40:02,294] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-11-28 10:40:02,388] [INFO] Start polling
+[2025-11-28 10:40:02,396] [INFO] Subscriber cache refreshed
+[2025-11-28 10:40:03,127] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-11-28 10:45:00,376] [INFO] Updated open trades: {'EURUSD': 2}
+[2025-11-28 10:45:00,402] [INFO] Open trades updated for Jump 100 Index
+[2025-11-28 10:45:00,405] [WARNING] Signal time 2025-11-28 01:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 10:45:00,405] [INFO] Open trades updated for Step Index
+[2025-11-28 10:45:00,405] [WARNING] Signal time 2025-11-25 22:45:00 is not valid for Step Index. Skipping.
+[2025-11-28 10:45:00,406] [INFO] Open trades updated for Crash 500 Index
+[2025-11-28 10:45:00,406] [WARNING] Signal time 2025-11-28 08:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-11-28 13:45:00,118] [WARNING] Signal time 2025-11-28 13:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 13:45:01,812] [ERROR] Order failed, retcode=10027
+[2025-11-28 13:45:01,812] [WARNING] No open positions found for Jump 100 Index.
+[2025-11-28 13:45:02,200] [INFO] The notify func called successfully
+[2025-11-28 13:45:03,136] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.51_1353.0002168858955_1405.6799277047014
+[2025-11-28 13:45:03,349] [ERROR] Failed to send signal to -1002008050520: Telegram server says - Flood control exceeded on method 'SendMessage' in chat -1002008050520. Retry in 9 seconds.
+Original description: Too Many Requests: retry after 9
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+[2025-11-28 13:45:03,531] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.99_1353.3773597430384_1406.1942134189871
+[2025-11-28 13:45:03,534] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1392.99_1353.3773597430384_1406.1942134189871
+[2025-11-28 13:45:13,437] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.65_1352.97093117161_1405.87635627613
+[2025-11-28 13:45:14,132] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.39_1353.6252168858955_1406.6449277047016
+[2025-11-28 13:45:22,723] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.3_1353.5352168858954_1406.5549277047014
+[2025-11-28 13:45:24,193] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.64_1352.8709311716098_1405.8963562761303
+[2025-11-28 13:45:24,311] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1392.64_1352.8709311716098_1405.8963562761303
+[2025-11-28 13:45:32,524] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.88_1353.1109311716098_1406.1363562761303
+[2025-11-28 13:45:33,211] [ERROR] Failed to send signal to -1002008050520: Telegram server says - Flood control exceeded on method 'SendMessage' in chat -1002008050520. Retry in 10 seconds.
+Original description: Too Many Requests: retry after 10
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+[2025-11-28 13:45:33,398] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.94_1353.1709311716097_1406.1963562761302
+[2025-11-28 13:45:33,809] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.91_1353.1409311716097_1406.1663562761303
+[2025-11-28 13:45:34,331] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.73_1352.9609311716097_1405.9863562761302
+[2025-11-28 13:45:34,459] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1392.73_1352.9609311716097_1405.9863562761302
+[2025-11-28 13:45:43,635] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.55_1352.7809311716096_1405.8063562761301
+[2025-11-28 13:45:44,295] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.34_1353.5709311716096_1406.59635627613
+[2025-11-28 13:45:44,870] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.69_1353.8609311716098_1406.9663562761302
+[2025-11-28 13:45:53,829] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.7_1353.8687883144669_1406.9770705618444
+[2025-11-28 13:45:54,255] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.95_1353.9473597430383_1407.2842134189873
+[2025-11-28 13:45:54,258] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1393.95_1353.9473597430383_1407.2842134189873
+[2025-11-28 13:45:55,278] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.47_1353.4673597430383_1406.8042134189873
+[2025-11-28 13:45:55,433] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1393.47_1353.4673597430383_1406.8042134189873
+[2025-11-28 13:46:04,319] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.2_1353.1973597430383_1406.5342134189873
+[2025-11-28 14:00:00,479] [WARNING] Signal time 2025-11-28 13:45:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 14:00:03,886] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1394.56_1356.2609156808694_1407.3263614397101
+[2025-11-28 14:00:04,688] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.44_1356.9523442522982_1408.2692185825674
+[2025-11-28 14:00:14,868] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.79_1357.227344252298_1408.6442185825672
+[2025-11-28 14:00:24,786] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1396.8_1357.999487109441_1409.733504296853
+[2025-11-28 14:00:34,374] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1396.74_1357.9159156808694_1409.6813614397101
+[2025-11-28 14:00:35,258] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.8_1356.950201395155_1408.7499328682816
+[2025-11-28 14:00:44,915] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.64_1356.7902013951552_1408.5899328682817
+[2025-11-28 14:00:54,624] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.47_1356.6202013951552_1408.4199328682816
+[2025-11-28 14:01:03,910] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.49_1356.6402013951551_1408.4399328682816
+[2025-11-28 14:15:00,112] [WARNING] Signal time 2025-11-28 14:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 14:15:03,729] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.44_1357.8685543575682_1407.963815214144
+[2025-11-28 14:15:06,148] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.69_1358.0606972147111_1408.2331009284298
+[2025-11-28 14:15:15,057] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.55_1357.8992686432823_1408.1002437855725
+[2025-11-28 14:27:45,416] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-11-28 14:27:45,437] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-11-28 14:27:57,708] [INFO] Connection established (tryings = 1, bot id = 7426056292)
+[2025-11-28 14:30:00,098] [WARNING] Signal time 2025-11-28 14:15:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 14:30:04,581] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.01_1364.8556984348977_1414.3947671883675
+[2025-11-28 14:30:14,211] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1401.9_1364.666412720612_1414.3111957597962
+[2025-11-28 14:30:15,513] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1401.88_1364.586412720612_1414.3111957597962
+[2025-11-28 14:30:24,699] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.46_1365.1321270063263_1414.9026243312246
+[2025-11-28 14:30:34,546] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.03_1364.689269863469_1414.4769100455103
+[2025-11-28 14:30:44,296] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.13_1364.744269863469_1414.5919100455105
+[2025-11-28 14:30:54,461] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.2_1364.814269863469_1414.6619100455105
+[2025-11-28 14:30:55,757] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1403.18_1365.6442698634692_1415.6919100455104
+[2025-11-28 14:31:04,380] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1403.41_1365.8335555777549_1415.9354814740818
