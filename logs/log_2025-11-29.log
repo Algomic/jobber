@@ -1,0 +1,62 @@
+[2025-11-29 00:08:50,164] [INFO] Subscriber cache loaded: 3 users
+[2025-11-29 00:08:50,180] [INFO] Starting the app...
+[2025-11-29 00:08:50,180] [WARNING] This might be risky.
+[2025-11-29 00:08:50,180] [CRITICAL] This is a heavy duty program !!!
+[2025-11-29 00:08:50,236] [INFO] Mt5 terminal initiated successfully!. 
+[2025-11-29 00:08:50,236] [INFO] Terminal successfully initiated.
+[2025-11-29 00:08:50,237] [INFO] Account Details
+Login: 40761020
+[2025-11-29 00:08:50,238] [INFO] Balance: 9941.38
+[2025-11-29 00:08:50,238] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-11-29 00:08:50,238] [INFO] Successfully logged in.
+[2025-11-29 00:08:50,239] [INFO] -------------------------------------------------------------------------
+[2025-11-29 00:08:50,239] [INFO] | Asset        | WFV Accuracy | IS Accuracy | Difference | Verdict      |
+[2025-11-29 00:08:52,402] [INFO] Fold 1 Accuracy = 0.9458
+[2025-11-29 00:08:52,437] [INFO] Fold 1 Accuracy = 0.9549
+[2025-11-29 00:08:52,500] [INFO] Fold 1 Accuracy = 0.9296
+[2025-11-29 00:08:52,678] [INFO] Fold 1 Accuracy = 0.9677
+[2025-11-29 00:08:52,694] [INFO] Fold 1 Accuracy = 0.9655
+[2025-11-29 00:08:53,382] [INFO] Fold 2 Accuracy = 0.9542
+[2025-11-29 00:08:53,486] [INFO] Fold 2 Accuracy = 0.9718
+[2025-11-29 00:08:53,587] [INFO] Fold 2 Accuracy = 0.9648
+[2025-11-29 00:08:53,640] [INFO] Fold 2 Accuracy = 0.9655
+[2025-11-29 00:08:53,716] [INFO] Fold 2 Accuracy = 0.9501
+[2025-11-29 00:08:53,914] [INFO] Fold 2 Accuracy = 0.9521
+[2025-11-29 00:08:54,889] [INFO] Fold 3 Accuracy = 0.9458
+[2025-11-29 00:08:54,926] [INFO] Fold 3 Accuracy = 0.9465
+[2025-11-29 00:08:55,190] [INFO] Fold 3 Accuracy = 0.9765
+[2025-11-29 00:08:55,236] [INFO] Fold 3 Accuracy = 0.9483
+[2025-11-29 00:08:55,390] [INFO] Fold 3 Accuracy = 0.9589
+[2025-11-29 00:08:55,950] [INFO] Fold 4 Accuracy = 0.9667
+[2025-11-29 00:08:56,092] [INFO] Fold 4 Accuracy = 0.9493
+[2025-11-29 00:08:56,339] [INFO] Fold 4 Accuracy = 0.9560
+[2025-11-29 00:08:56,548] [INFO] Fold 4 Accuracy = 0.9368
+[2025-11-29 00:08:56,622] [INFO] Fold 4 Accuracy = 0.9677
+[2025-11-29 00:08:56,829] [INFO] Fold 4 Accuracy = 0.9662
+[2025-11-29 00:08:57,137] [INFO] Fold 5 Accuracy = 0.9417
+[2025-11-29 00:08:57,137] [INFO] Mean Walk-Forward Accuracy = 0.95
+[2025-11-29 00:08:57,138] [INFO] Training final LightGBM model on full data...
+[2025-11-29 00:08:57,297] [INFO] Fold 5 Accuracy = 0.9549
+[2025-11-29 00:08:57,297] [INFO] Mean Walk-Forward Accuracy = 0.96
+[2025-11-29 00:08:57,701] [INFO] Fold 5 Accuracy = 0.9384
+[2025-11-29 00:08:57,945] [INFO] Fold 5 Accuracy = 0.9853
+[2025-11-29 00:08:57,946] [INFO] Mean Walk-Forward Accuracy = 0.97
+[2025-11-29 00:08:58,056] [INFO] Fold 5 Accuracy = 0.9310
+[2025-11-29 00:08:58,091] [INFO] Fold 5 Accuracy = 0.9521
+[2025-11-29 00:08:58,398] [INFO] | Jump 100 Index | 0.9508       | 0.9570    | -0.62%    | Very Good    |
+[2025-11-29 00:08:58,738] [INFO] | Crash 1000 Index | 0.9555       | 0.9512    | +0.43%    | Excellent    |
+[2025-11-29 00:08:58,916] [INFO] | Crash 500 Index | 0.9531       | 0.9463    | +0.68%    | Very Good    |
+[2025-11-29 00:08:59,625] [INFO] | Boom 500 Index | 0.9660       | 0.9570    | +0.90%    | Very Good    |
+[2025-11-29 00:08:59,681] [INFO] | Boom 1000 Index | 0.9544       | 0.9526    | +0.17%    | Perfect      |
+[2025-11-29 00:08:59,755] [INFO] | Step Index   | 0.9494       | 0.9508    | -0.13%    | Perfect      |
+[2025-11-29 00:08:59,814] [INFO] Start polling
+[2025-11-29 00:08:59,830] [INFO] Subscriber cache refreshed
+[2025-11-29 00:09:00,496] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-11-29 00:15:00,336] [INFO] Updated open trades: {'EURUSD': 2}
+[2025-11-29 00:15:00,353] [INFO] Open trades updated for Jump 100 Index
+[2025-11-29 00:15:00,357] [WARNING] Signal time 2025-11-28 08:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-29 00:15:00,358] [INFO] Open trades updated for Crash 500 Index
+[2025-11-29 00:15:00,358] [WARNING] Signal time 2025-11-28 08:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-11-29 00:36:29,021] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-11-29 00:36:29,052] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-11-29 00:36:40,663] [INFO] Connection established (tryings = 1, bot id = 7426056292)

@@ -35,7 +35,7 @@ import time
 import threading
 from datetime import datetime, timedelta, timezone
 from BOT.strategy.strategy import signal
-from BOT.models.model import fetch_current_data, prepare_latest_data, make_prediction
+from BOT.models.data_pipeline import fetch_current_data, prepare_latest_data, make_prediction
 import MetaTrader5 as mt5
 import pandas as pd
 from BOT.orders.request import orders

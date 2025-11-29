@@ -1,5 +1,5 @@
 import MetaTrader5 as mt5
-from BOT.models.model import fetch_current_data, fetch_and_store_data
+from BOT.models.model import fetch_and_store_data
 
 
 config = {

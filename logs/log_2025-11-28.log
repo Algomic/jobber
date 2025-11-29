@@ -1,0 +1,316 @@
+[2025-11-28 10:39:56,410] [INFO] Subscriber cache loaded: 3 users
+[2025-11-28 10:39:56,425] [INFO] Starting the app...
+[2025-11-28 10:39:56,426] [WARNING] This might be risky.
+[2025-11-28 10:39:56,426] [CRITICAL] This is a heavy duty program !!!
+[2025-11-28 10:39:56,477] [INFO] Mt5 terminal initiated successfully!. 
+[2025-11-28 10:39:56,477] [INFO] Terminal successfully initiated.
+[2025-11-28 10:39:56,477] [INFO] Account Details
+Login: 40761020
+[2025-11-28 10:39:56,477] [INFO] Balance: 9947.67
+[2025-11-28 10:39:56,478] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-11-28 10:39:56,478] [INFO] Successfully logged in.
+[2025-11-28 10:39:56,479] [INFO] Starting model build for Boom 1000 Index...
+[2025-11-28 10:39:56,486] [INFO] Starting model build for Boom 500 Index...
+[2025-11-28 10:39:56,491] [INFO] Starting model build for Crash 1000 Index...
+[2025-11-28 10:39:56,493] [INFO] Starting model build for Crash 500 Index...
+[2025-11-28 10:39:56,496] [INFO] Starting model build for Step Index...
+[2025-11-28 10:39:56,517] [INFO] Starting model build for Jump 100 Index...
+[2025-11-28 10:40:01,692] [INFO] Mean accuracy: 0.95
+[2025-11-28 10:40:01,697] [INFO] Completed model for Jump 100 Index: Accuracy = 0.95
+[2025-11-28 10:40:02,239] [INFO] Completed model for Step Index: Accuracy = 0.95
+[2025-11-28 10:40:02,267] [INFO] Completed model for Boom 1000 Index: Accuracy = 0.95
+[2025-11-28 10:40:02,281] [INFO] Mean accuracy: 0.96
+[2025-11-28 10:40:02,283] [INFO] Completed model for Crash 500 Index: Accuracy = 0.95
+[2025-11-28 10:40:02,283] [INFO] Completed model for Crash 1000 Index: Accuracy = 0.96
+[2025-11-28 10:40:02,294] [INFO] Mean accuracy: 0.97
+[2025-11-28 10:40:02,294] [INFO] Completed model for Boom 500 Index: Accuracy = 0.97
+[2025-11-28 10:40:02,388] [INFO] Start polling
+[2025-11-28 10:40:02,396] [INFO] Subscriber cache refreshed
+[2025-11-28 10:40:03,127] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-11-28 10:45:00,376] [INFO] Updated open trades: {'EURUSD': 2}
+[2025-11-28 10:45:00,402] [INFO] Open trades updated for Jump 100 Index
+[2025-11-28 10:45:00,405] [WARNING] Signal time 2025-11-28 01:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 10:45:00,405] [INFO] Open trades updated for Step Index
+[2025-11-28 10:45:00,405] [WARNING] Signal time 2025-11-25 22:45:00 is not valid for Step Index. Skipping.
+[2025-11-28 10:45:00,406] [INFO] Open trades updated for Crash 500 Index
+[2025-11-28 10:45:00,406] [WARNING] Signal time 2025-11-28 08:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-11-28 13:45:00,118] [WARNING] Signal time 2025-11-28 13:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 13:45:01,812] [ERROR] Order failed, retcode=10027
+[2025-11-28 13:45:01,812] [WARNING] No open positions found for Jump 100 Index.
+[2025-11-28 13:45:02,200] [INFO] The notify func called successfully
+[2025-11-28 13:45:03,136] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.51_1353.0002168858955_1405.6799277047014
+[2025-11-28 13:45:03,349] [ERROR] Failed to send signal to -1002008050520: Telegram server says - Flood control exceeded on method 'SendMessage' in chat -1002008050520. Retry in 9 seconds.
+Original description: Too Many Requests: retry after 9
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+[2025-11-28 13:45:03,531] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.99_1353.3773597430384_1406.1942134189871
+[2025-11-28 13:45:03,534] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1392.99_1353.3773597430384_1406.1942134189871
+[2025-11-28 13:45:13,437] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.65_1352.97093117161_1405.87635627613
+[2025-11-28 13:45:14,132] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.39_1353.6252168858955_1406.6449277047016
+[2025-11-28 13:45:22,723] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.3_1353.5352168858954_1406.5549277047014
+[2025-11-28 13:45:24,193] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.64_1352.8709311716098_1405.8963562761303
+[2025-11-28 13:45:24,311] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1392.64_1352.8709311716098_1405.8963562761303
+[2025-11-28 13:45:32,524] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.88_1353.1109311716098_1406.1363562761303
+[2025-11-28 13:45:33,211] [ERROR] Failed to send signal to -1002008050520: Telegram server says - Flood control exceeded on method 'SendMessage' in chat -1002008050520. Retry in 10 seconds.
+Original description: Too Many Requests: retry after 10
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+[2025-11-28 13:45:33,398] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.94_1353.1709311716097_1406.1963562761302
+[2025-11-28 13:45:33,809] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.91_1353.1409311716097_1406.1663562761303
+[2025-11-28 13:45:34,331] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.73_1352.9609311716097_1405.9863562761302
+[2025-11-28 13:45:34,459] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1392.73_1352.9609311716097_1405.9863562761302
+[2025-11-28 13:45:43,635] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1392.55_1352.7809311716096_1405.8063562761301
+[2025-11-28 13:45:44,295] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.34_1353.5709311716096_1406.59635627613
+[2025-11-28 13:45:44,870] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.69_1353.8609311716098_1406.9663562761302
+[2025-11-28 13:45:53,829] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.7_1353.8687883144669_1406.9770705618444
+[2025-11-28 13:45:54,255] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.95_1353.9473597430383_1407.2842134189873
+[2025-11-28 13:45:54,258] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1393.95_1353.9473597430383_1407.2842134189873
+[2025-11-28 13:45:55,278] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.47_1353.4673597430383_1406.8042134189873
+[2025-11-28 13:45:55,433] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1393.47_1353.4673597430383_1406.8042134189873
+[2025-11-28 13:46:04,319] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1393.2_1353.1973597430383_1406.5342134189873
+[2025-11-28 14:00:00,479] [WARNING] Signal time 2025-11-28 13:45:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 14:00:03,886] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1394.56_1356.2609156808694_1407.3263614397101
+[2025-11-28 14:00:04,688] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.44_1356.9523442522982_1408.2692185825674
+[2025-11-28 14:00:14,868] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.79_1357.227344252298_1408.6442185825672
+[2025-11-28 14:00:24,786] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1396.8_1357.999487109441_1409.733504296853
+[2025-11-28 14:00:34,374] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1396.74_1357.9159156808694_1409.6813614397101
+[2025-11-28 14:00:35,258] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.8_1356.950201395155_1408.7499328682816
+[2025-11-28 14:00:44,915] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.64_1356.7902013951552_1408.5899328682817
+[2025-11-28 14:00:54,624] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.47_1356.6202013951552_1408.4199328682816
+[2025-11-28 14:01:03,910] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.49_1356.6402013951551_1408.4399328682816
+[2025-11-28 14:15:00,112] [WARNING] Signal time 2025-11-28 14:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 14:15:03,729] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.44_1357.8685543575682_1407.963815214144
+[2025-11-28 14:15:06,148] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.69_1358.0606972147111_1408.2331009284298
+[2025-11-28 14:15:15,057] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1395.55_1357.8992686432823_1408.1002437855725
+[2025-11-28 14:27:45,416] [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2025-11-28 14:27:45,437] [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7426056292)
+[2025-11-28 14:27:57,708] [INFO] Connection established (tryings = 1, bot id = 7426056292)
+[2025-11-28 14:30:00,098] [WARNING] Signal time 2025-11-28 14:15:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 14:30:04,581] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.01_1364.8556984348977_1414.3947671883675
+[2025-11-28 14:30:14,211] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1401.9_1364.666412720612_1414.3111957597962
+[2025-11-28 14:30:15,513] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1401.88_1364.586412720612_1414.3111957597962
+[2025-11-28 14:30:24,699] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.46_1365.1321270063263_1414.9026243312246
+[2025-11-28 14:30:34,546] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.03_1364.689269863469_1414.4769100455103
+[2025-11-28 14:30:44,296] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.13_1364.744269863469_1414.5919100455105
+[2025-11-28 14:30:54,461] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1402.2_1364.814269863469_1414.6619100455105
+[2025-11-28 14:30:55,757] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1403.18_1365.6442698634692_1415.6919100455104
+[2025-11-28 14:31:04,380] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1403.41_1365.8335555777549_1415.9354814740818
+[2025-11-28 16:15:00,109] [WARNING] Signal time 2025-11-28 16:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 16:15:02,250] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.42_1399.1614709004346_1451.506176366522
+[2025-11-28 16:15:02,854] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.84_1399.5171851861487_1451.9476049379502
+[2025-11-28 16:15:03,433] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.82_1399.4971851861487_1451.9276049379503
+[2025-11-28 16:15:03,739] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1438.82_1399.4971851861487_1451.9276049379503
+[2025-11-28 16:15:12,797] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.48_1399.1571851861488_1451.5876049379503
+[2025-11-28 16:15:23,486] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.46_1399.0836137575775_1451.5854620808075
+[2025-11-28 16:15:24,283] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.61_1399.2250423290059_1451.7383192236646
+[2025-11-28 16:15:24,474] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1438.61_1399.2250423290059_1451.7383192236646
+[2025-11-28 16:15:33,364] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.51_1399.125042329006_1451.6383192236647
+[2025-11-28 16:15:34,259] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.97_1399.5186137575774_1452.1204620808076
+[2025-11-28 16:15:42,900] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.72_1399.2686137575774_1451.8704620808076
+[2025-11-28 16:15:43,406] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1439.29_1399.817185186149_1452.4476049379502
+[2025-11-28 16:15:43,433] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1439.29_1399.817185186149_1452.4476049379502
+[2025-11-28 16:15:44,347] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1439.21_1399.737185186149_1452.3676049379503
+[2025-11-28 16:15:44,474] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1439.21_1399.737185186149_1452.3676049379503
+[2025-11-28 16:15:53,462] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1438.95_1399.477185186149_1452.1076049379503
+[2025-11-28 16:30:00,130] [WARNING] Signal time 2025-11-28 16:15:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 16:30:02,320] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1440.71_1402.173406652026_1453.5555311159915
+[2025-11-28 16:30:02,823] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1440.85_1402.296263794883_1453.7012454017056
+[2025-11-28 16:30:03,348] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1441.32_1402.6655495091686_1454.204816830277
+[2025-11-28 16:30:03,350] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1441.32_1402.6655495091686_1454.204816830277
+[2025-11-28 16:30:12,363] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1441.47_1402.7834066520259_1454.3655311159914
+[2025-11-28 16:30:12,837] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.44_1403.5005495091689_1455.4198168302771
+[2025-11-28 16:30:13,274] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.51_1403.5705495091688_1455.489816830277
+[2025-11-28 16:30:13,445] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1442.51_1403.5705495091688_1455.489816830277
+[2025-11-28 16:30:22,369] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.81_1403.836263794883_1455.8012454017055
+[2025-11-28 16:30:22,744] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.35_1403.2884066520257_1455.3705311159913
+[2025-11-28 16:30:22,747] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1442.35_1403.2884066520257_1455.3705311159913
+[2025-11-28 16:30:23,288] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.46_1403.3984066520259_1455.4805311159914
+[2025-11-28 16:30:23,292] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1442.46_1403.3984066520259_1455.4805311159914
+[2025-11-28 16:30:32,455] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.13_1403.068406652026_1455.1505311159915
+[2025-11-28 16:30:33,127] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.32_1403.2584066520258_1455.3405311159913
+[2025-11-28 16:30:41,772] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1441.94_1402.878406652026_1454.9605311159914
+[2025-11-28 16:30:42,402] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.56_1403.4984066520258_1455.5805311159913
+[2025-11-28 16:30:42,661] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1442.56_1403.4984066520258_1455.5805311159913
+[2025-11-28 16:30:51,641] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.58_1403.5184066520258_1455.6005311159913
+[2025-11-28 16:30:52,096] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.19_1403.128406652026_1455.2105311159914
+[2025-11-28 16:30:52,758] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.45_1403.3884066520259_1455.4705311159914
+[2025-11-28 16:30:52,764] [INFO] Telegram Notification: Duplicate detected, skipping signal: Jump 100 Index_1442.45_1403.3884066520259_1455.4705311159914
+[2025-11-28 16:31:01,725] [INFO] Telegram Notification: Signal sent and stored: Jump 100 Index_1442.77_1403.7084066520258_1455.7905311159914
+[2025-11-28 16:45:00,204] [WARNING] Signal time 2025-11-28 16:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 16:45:04,762] [ERROR] Failed to execute order for Jump 100 Index: 'Jump 100 Index'
+[2025-11-28 16:45:04,762] [INFO] Updated open trades: {'EURUSD': 2, 'Jump 100 Index': 1}
+[2025-11-28 16:45:05,805] [INFO] Trade successful for Jump 100 Index. Signal ID b05843c7-0d27-549e-90c3-b8219eb933f4 marked as used.
+[2025-11-28 16:45:05,806] [ERROR] Failed to execute order for Jump 100 Index: module 'MetaTrader5' has no attribute 'ORDER_BUY'
+[2025-11-28 16:45:05,807] [INFO] Updated open trades: {'EURUSD': 2, 'Jump 100 Index': 2}
+[2025-11-28 16:45:05,991] [WARNING] Max open trades reached for Jump 100 Index. Skipping.
+[2025-11-28 17:15:00,196] [WARNING] Signal time 2025-11-28 17:00:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 17:15:09,858] [INFO] Trade successful for Jump 100 Index. Signal ID e5aee9ee-0cd7-5bcb-9f14-a0834fb3f3a1 marked as used.
+[2025-11-28 18:00:00,209] [WARNING] Signal time 2025-11-28 17:45:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 18:39:54,815] [INFO] Shutting down monitor...
+[2025-11-28 18:39:54,829] [INFO] monitor_asset ran for 479.88 minutes
+[2025-11-28 19:54:03,659] [INFO] Subscriber cache loaded: 3 users
+[2025-11-28 19:54:03,677] [INFO] Starting the app...
+[2025-11-28 19:54:03,677] [WARNING] This might be risky.
+[2025-11-28 19:54:03,679] [CRITICAL] This is a heavy duty program !!!
+[2025-11-28 19:54:40,550] [INFO] Mt5 terminal initiated successfully!. 
+[2025-11-28 19:54:40,558] [INFO] Terminal successfully initiated.
+[2025-11-28 19:54:40,561] [INFO] Account Details
+Login: 40761020
+[2025-11-28 19:54:40,563] [INFO] Balance: 9942.65
+[2025-11-28 19:54:40,563] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-11-28 19:54:40,563] [INFO] Successfully logged in.
+[2025-11-28 19:54:40,565] [INFO] -------------------------------------------------------------------------
+[2025-11-28 19:54:40,565] [INFO] | Asset        | WFV Accuracy | IS Accuracy | Difference | Verdict      |
+[2025-11-28 19:54:53,777] [INFO] Fold 1 Accuracy = 0.9458
+[2025-11-28 19:54:53,859] [INFO] Fold 1 Accuracy = 0.9549
+[2025-11-28 19:54:54,103] [INFO] Fold 1 Accuracy = 0.9655
+[2025-11-28 19:54:54,141] [INFO] Fold 1 Accuracy = 0.9296
+[2025-11-28 19:54:54,370] [INFO] Fold 1 Accuracy = 0.9677
+[2025-11-28 19:54:56,199] [INFO] Fold 2 Accuracy = 0.9542
+[2025-11-28 19:54:56,546] [INFO] Fold 2 Accuracy = 0.9718
+[2025-11-28 19:54:56,802] [INFO] Fold 2 Accuracy = 0.9655
+[2025-11-28 19:54:57,150] [INFO] Fold 2 Accuracy = 0.9521
+[2025-11-28 19:54:57,370] [INFO] Fold 2 Accuracy = 0.9501
+[2025-11-28 19:54:59,303] [INFO] Fold 2 Accuracy = 0.9648
+[2025-11-28 19:55:03,880] [INFO] Fold 3 Accuracy = 0.9465
+[2025-11-28 19:55:04,002] [INFO] Fold 3 Accuracy = 0.9458
+[2025-11-28 19:55:04,308] [INFO] Fold 3 Accuracy = 0.9483
+[2025-11-28 19:55:04,816] [INFO] Fold 3 Accuracy = 0.9589
+[2025-11-28 19:55:05,012] [INFO] Fold 3 Accuracy = 0.9765
+[2025-11-28 19:55:05,745] [INFO] Fold 4 Accuracy = 0.9493
+[2025-11-28 19:55:06,090] [INFO] Fold 4 Accuracy = 0.9667
+[2025-11-28 19:55:07,583] [INFO] Fold 4 Accuracy = 0.9368
+[2025-11-28 19:55:07,693] [INFO] Fold 4 Accuracy = 0.9662
+[2025-11-28 19:55:07,819] [INFO] Fold 4 Accuracy = 0.9677
+[2025-11-28 19:55:08,065] [INFO] Fold 5 Accuracy = 0.9549
+[2025-11-28 19:55:08,065] [INFO] Mean Walk-Forward Accuracy = 0.96
+[2025-11-28 19:55:08,067] [INFO] Training final LightGBM model on full data...
+[2025-11-28 19:55:08,112] [INFO] Fold 4 Accuracy = 0.9560
+[2025-11-28 19:55:08,470] [INFO] Fold 5 Accuracy = 0.9417
+[2025-11-28 19:55:08,473] [INFO] Mean Walk-Forward Accuracy = 0.95
+[2025-11-28 19:55:10,897] [INFO] Fold 5 Accuracy = 0.9521
+[2025-11-28 19:55:11,128] [INFO] Fold 5 Accuracy = 0.9310
+[2025-11-28 19:55:11,366] [INFO] Fold 5 Accuracy = 0.9853
+[2025-11-28 19:55:11,368] [INFO] Mean Walk-Forward Accuracy = 0.97
+[2025-11-28 19:55:12,126] [INFO] | Crash 1000 Index | 0.9555       | 0.9512    | +0.43%    | Excellent    |
+[2025-11-28 19:55:12,407] [INFO] Fold 5 Accuracy = 0.9384
+[2025-11-28 19:55:13,025] [INFO] | Jump 100 Index | 0.9508       | 0.9570    | -0.62%    | Very Good    |
+[2025-11-28 19:55:15,010] [INFO] | Boom 1000 Index | 0.9544       | 0.9526    | +0.17%    | Perfect      |
+[2025-11-28 19:55:15,085] [INFO] | Boom 500 Index | 0.9660       | 0.9570    | +0.90%    | Very Good    |
+[2025-11-28 19:55:15,132] [INFO] | Step Index   | 0.9494       | 0.9508    | -0.13%    | Perfect      |
+[2025-11-28 19:55:15,345] [INFO] | Crash 500 Index | 0.9531       | 0.9463    | +0.68%    | Very Good    |
+[2025-11-28 20:03:15,976] [INFO] Subscriber cache loaded: 3 users
+[2025-11-28 20:03:15,991] [INFO] Starting the app...
+[2025-11-28 20:03:15,992] [WARNING] This might be risky.
+[2025-11-28 20:03:15,992] [CRITICAL] This is a heavy duty program !!!
+[2025-11-28 20:03:16,042] [INFO] Mt5 terminal initiated successfully!. 
+[2025-11-28 20:03:16,042] [INFO] Terminal successfully initiated.
+[2025-11-28 20:03:16,043] [INFO] Account Details
+Login: 40761020
+[2025-11-28 20:03:16,043] [INFO] Balance: 9942.65
+[2025-11-28 20:03:16,043] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-11-28 20:03:16,043] [INFO] Successfully logged in.
+[2025-11-28 20:03:16,043] [INFO] -------------------------------------------------------------------------
+[2025-11-28 20:03:16,043] [INFO] | Asset        | WFV Accuracy | IS Accuracy | Difference | Verdict      |
+[2025-11-28 20:03:17,436] [INFO] Fold 1 Accuracy = 0.9458
+[2025-11-28 20:03:17,436] [INFO] Fold 1 Accuracy = 0.9549
+[2025-11-28 20:03:17,527] [INFO] Fold 1 Accuracy = 0.9296
+[2025-11-28 20:03:17,538] [INFO] Fold 1 Accuracy = 0.9655
+[2025-11-28 20:03:17,618] [INFO] Fold 1 Accuracy = 0.9677
+[2025-11-28 20:03:19,618] [INFO] Fold 2 Accuracy = 0.9542
+[2025-11-28 20:03:19,976] [INFO] Fold 2 Accuracy = 0.9718
+[2025-11-28 20:03:20,120] [INFO] Fold 2 Accuracy = 0.9655
+[2025-11-28 20:03:20,732] [INFO] Fold 2 Accuracy = 0.9648
+[2025-11-28 20:03:21,972] [INFO] Fold 2 Accuracy = 0.9501
+[2025-11-28 20:03:22,475] [INFO] Fold 2 Accuracy = 0.9521
+[2025-11-28 20:03:25,510] [INFO] Fold 3 Accuracy = 0.9465
+[2025-11-28 20:03:25,528] [INFO] Fold 3 Accuracy = 0.9458
+[2025-11-28 20:03:26,383] [INFO] Fold 3 Accuracy = 0.9483
+[2025-11-28 20:03:27,086] [INFO] Fold 3 Accuracy = 0.9765
+[2025-11-28 20:03:27,192] [INFO] Fold 3 Accuracy = 0.9589
+[2025-11-28 20:03:28,647] [INFO] Fold 4 Accuracy = 0.9493
+[2025-11-28 20:03:28,674] [INFO] Fold 4 Accuracy = 0.9667
+[2025-11-28 20:03:29,189] [INFO] Fold 4 Accuracy = 0.9368
+[2025-11-28 20:03:29,376] [INFO] Fold 4 Accuracy = 0.9677
+[2025-11-28 20:03:29,423] [INFO] Fold 4 Accuracy = 0.9560
+[2025-11-28 20:03:29,614] [INFO] Fold 4 Accuracy = 0.9662
+[2025-11-28 20:03:29,763] [INFO] Fold 5 Accuracy = 0.9417
+[2025-11-28 20:03:29,764] [INFO] Mean Walk-Forward Accuracy = 0.95
+[2025-11-28 20:03:29,764] [INFO] Training final LightGBM model on full data...
+[2025-11-28 20:03:29,824] [INFO] Fold 5 Accuracy = 0.9549
+[2025-11-28 20:03:29,824] [INFO] Mean Walk-Forward Accuracy = 0.96
+[2025-11-28 20:03:30,448] [INFO] Fold 5 Accuracy = 0.9310
+[2025-11-28 20:03:30,565] [INFO] Fold 5 Accuracy = 0.9384
+[2025-11-28 20:03:30,614] [INFO] Fold 5 Accuracy = 0.9853
+[2025-11-28 20:03:30,615] [INFO] Mean Walk-Forward Accuracy = 0.97
+[2025-11-28 20:03:31,126] [INFO] Fold 5 Accuracy = 0.9521
+[2025-11-28 20:03:31,338] [INFO] | Jump 100 Index | 0.9508       | 0.9570    | -0.62%    | Very Good    |
+[2025-11-28 20:03:31,380] [INFO] | Crash 1000 Index | 0.9555       | 0.9512    | +0.43%    | Excellent    |
+[2025-11-28 20:03:31,839] [INFO] | Step Index   | 0.9494       | 0.9508    | -0.13%    | Perfect      |
+[2025-11-28 20:03:31,853] [INFO] | Crash 500 Index | 0.9531       | 0.9463    | +0.68%    | Very Good    |
+[2025-11-28 20:03:31,915] [INFO] | Boom 500 Index | 0.9660       | 0.9570    | +0.90%    | Very Good    |
+[2025-11-28 20:03:31,996] [INFO] | Boom 1000 Index | 0.9544       | 0.9526    | +0.17%    | Perfect      |
+[2025-11-28 23:25:14,827] [INFO] Subscriber cache loaded: 3 users
+[2025-11-28 23:25:14,847] [INFO] Starting the app...
+[2025-11-28 23:25:14,847] [WARNING] This might be risky.
+[2025-11-28 23:25:14,848] [CRITICAL] This is a heavy duty program !!!
+[2025-11-28 23:25:14,947] [INFO] Mt5 terminal initiated successfully!. 
+[2025-11-28 23:25:14,948] [INFO] Terminal successfully initiated.
+[2025-11-28 23:25:14,948] [INFO] Account Details
+Login: 40761020
+[2025-11-28 23:25:14,949] [INFO] Balance: 9941.38
+[2025-11-28 23:25:14,949] [INFO] Name: Olalekan Solomon Awoyemi
+[2025-11-28 23:25:14,949] [INFO] Successfully logged in.
+[2025-11-28 23:25:14,950] [INFO] -------------------------------------------------------------------------
+[2025-11-28 23:25:14,950] [INFO] | Asset        | WFV Accuracy | IS Accuracy | Difference | Verdict      |
+[2025-11-28 23:25:17,485] [INFO] Fold 1 Accuracy = 0.9458
+[2025-11-28 23:25:17,498] [INFO] Fold 1 Accuracy = 0.9549
+[2025-11-28 23:25:17,672] [INFO] Fold 1 Accuracy = 0.9296
+[2025-11-28 23:25:17,783] [INFO] Fold 1 Accuracy = 0.9677
+[2025-11-28 23:25:17,844] [INFO] Fold 1 Accuracy = 0.9655
+[2025-11-28 23:25:18,407] [INFO] Fold 2 Accuracy = 0.9542
+[2025-11-28 23:25:18,465] [INFO] Fold 2 Accuracy = 0.9718
+[2025-11-28 23:25:18,667] [INFO] Fold 2 Accuracy = 0.9521
+[2025-11-28 23:25:18,700] [INFO] Fold 2 Accuracy = 0.9655
+[2025-11-28 23:25:18,740] [INFO] Fold 2 Accuracy = 0.9648
+[2025-11-28 23:25:18,750] [INFO] Fold 2 Accuracy = 0.9501
+[2025-11-28 23:25:19,276] [INFO] Fold 3 Accuracy = 0.9465
+[2025-11-28 23:25:19,343] [INFO] Fold 3 Accuracy = 0.9458
+[2025-11-28 23:25:19,693] [INFO] Fold 3 Accuracy = 0.9483
+[2025-11-28 23:25:19,747] [INFO] Fold 3 Accuracy = 0.9765
+[2025-11-28 23:25:19,787] [INFO] Fold 3 Accuracy = 0.9589
+[2025-11-28 23:25:20,470] [INFO] Fold 4 Accuracy = 0.9493
+[2025-11-28 23:25:20,576] [INFO] Fold 4 Accuracy = 0.9667
+[2025-11-28 23:25:21,043] [INFO] Fold 4 Accuracy = 0.9560
+[2025-11-28 23:25:21,074] [INFO] Fold 4 Accuracy = 0.9677
+[2025-11-28 23:25:21,101] [INFO] Fold 4 Accuracy = 0.9368
+[2025-11-28 23:25:21,262] [INFO] Fold 5 Accuracy = 0.9549
+[2025-11-28 23:25:21,262] [INFO] Mean Walk-Forward Accuracy = 0.96
+[2025-11-28 23:25:21,263] [INFO] Training final LightGBM model on full data...
+[2025-11-28 23:25:21,366] [INFO] Fold 4 Accuracy = 0.9662
+[2025-11-28 23:25:21,423] [INFO] Fold 5 Accuracy = 0.9417
+[2025-11-28 23:25:21,424] [INFO] Mean Walk-Forward Accuracy = 0.95
+[2025-11-28 23:25:21,987] [INFO] Fold 5 Accuracy = 0.9384
+[2025-11-28 23:25:22,046] [INFO] Fold 5 Accuracy = 0.9853
+[2025-11-28 23:25:22,046] [INFO] Mean Walk-Forward Accuracy = 0.97
+[2025-11-28 23:25:22,126] [INFO] Fold 5 Accuracy = 0.9310
+[2025-11-28 23:25:22,213] [INFO] | Crash 1000 Index | 0.9555       | 0.9512    | +0.43%    | Excellent    |
+[2025-11-28 23:25:22,300] [INFO] | Jump 100 Index | 0.9508       | 0.9570    | -0.62%    | Very Good    |
+[2025-11-28 23:25:22,345] [INFO] Fold 5 Accuracy = 0.9521
+[2025-11-28 23:25:22,699] [INFO] | Crash 500 Index | 0.9531       | 0.9463    | +0.68%    | Very Good    |
+[2025-11-28 23:25:22,761] [INFO] | Boom 500 Index | 0.9660       | 0.9570    | +0.90%    | Very Good    |
+[2025-11-28 23:25:22,829] [INFO] | Step Index   | 0.9494       | 0.9508    | -0.13%    | Perfect      |
+[2025-11-28 23:25:22,902] [INFO] | Boom 1000 Index | 0.9544       | 0.9526    | +0.17%    | Perfect      |
+[2025-11-28 23:25:22,975] [INFO] Start polling
+[2025-11-28 23:25:22,977] [INFO] Subscriber cache refreshed
+[2025-11-28 23:25:23,766] [INFO] Run polling for bot @jobbah_bot id=7426056292 - 'jobber'
+[2025-11-28 23:30:00,114] [INFO] Updated open trades: {'EURUSD': 2}
+[2025-11-28 23:30:00,117] [INFO] Open trades updated for Jump 100 Index
+[2025-11-28 23:30:00,117] [WARNING] Signal time 2025-11-28 20:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-28 23:30:00,118] [INFO] Open trades updated for Crash 500 Index
+[2025-11-28 23:30:00,118] [WARNING] Signal time 2025-11-28 08:15:00 is not valid for Crash 500 Index. Skipping.
+[2025-11-28 23:30:00,118] [INFO] Open trades updated for Step Index
+[2025-11-28 23:30:00,118] [WARNING] Signal time 2025-11-28 22:15:00 is not valid for Step Index. Skipping.
+[2025-11-29 00:00:02,869] [INFO] Open trades updated for Crash 1000 Index
+[2025-11-29 00:00:02,888] [WARNING] Signal time 2025-11-28 22:15:00 is not valid for Crash 1000 Index. Skipping.
+[2025-11-29 00:00:02,890] [WARNING] Signal time 2025-11-28 08:30:00 is not valid for Jump 100 Index. Skipping.
+[2025-11-29 00:08:08,667] [INFO] Shutting down monitor...
+[2025-11-29 00:08:08,670] [INFO] monitor_asset ran for 42.76 minutes

@@ -3,7 +3,6 @@ from datetime import datetime, timedelta
 # from BOT import config
 import pandas as pd
 import numpy as np
-import lightgbm as lgb
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import TimeSeriesSplit
@@ -75,9 +74,6 @@ def build_and_evaluate_model(data_fetcher, timeframes, n_splits=5): #build_and_e
     # Load and preprocess data
     data = load_data()
 
-    # Load and preprocess data
-    data = load_data()
-
     # Prepare features and labels
     features = prepare_features(data)
     features['Label'] = features['15min_Trend'].shift(-1)
@@ -86,100 +82,108 @@ def build_and_evaluate_model(data_fetcher, timeframes, n_splits=5): #build_and_e
     # Split data for walk-forward validation
     tscv = TimeSeriesSplit(n_splits=n_splits)
     accuracies = []
+    model = RandomForestClassifier()
 
-    # New
-    X = features.drop("Label", axis=1)
-    y = features["Label"]
-    #.
-    
+    for train_index, test_index in tscv.split(features):
+        train, test = features.iloc[train_index], features.iloc[test_index]
+        X_train, y_train = train.drop('Label', axis=1), train['Label']
+        X_test, y_test = test.drop('Label', axis=1), test['Label']
 
-    #Training params
-    LGB_PARAMS = {
-    "n_estimators": 400,
-    "learning_rate": 0.03,
-    "num_leaves": 31,
-    "max_depth": -1,
-    "subsample": 0.9,
-    "colsample_bytree": 0.9,
-    "random_state": 42,
-    }
-    
-    
-    
-    for fold, (train_index, test_index) in enumerate(tscv.split(X), 1):
-        X_train, X_test = X.iloc[train_index], X.iloc[test_index]
-        y_train, y_test = y.iloc[train_index], y.iloc[test_index]
-
-        model = lgb.LGBMClassifier(**LGB_PARAMS)
+        # Train the model
         model.fit(X_train, y_train)
 
-        preds = model.predict(X_test)
-        acc = accuracy_score(y_test, preds)
-        logger.info(f"Fold {fold} Accuracy = {acc:.4f}")
-        accuracies.append(acc)
-    mean_wfv_accuracy = np.mean(accuracies)
-    logger.info(f"Mean Walk-Forward Accuracy = {mean_wfv_accuracy:.2f}")
+        # Predict and evaluate
+        predictions = model.predict(X_test)
+        accuracy = accuracy_score(y_test, predictions)
+        accuracies.append(accuracy)
 
-    
-    # Final Training
-    # --------------------------------------------------
-    logger.info("Training final LightGBM model on full data...")
-    final_model = lgb.LGBMClassifier(**LGB_PARAMS)
-    final_model.fit(X, y)
+    mean_accuracy = np.mean(accuracies)
+    logger.info(f"Mean accuracy: {mean_accuracy:.2f}")
 
-    # Predict on the same dataset (IN-SAMPLE)
-    final_predictions = final_model.predict(X)
-    in_sample_accuracy = accuracy_score(y, final_predictions)
-
-    print("Walk-Forward (OOS) Accuracy:", mean_wfv_accuracy)
-    print("Final Model (IS) Accuracy:", in_sample_accuracy)
-    
-    
-    return final_model, mean_wfv_accuracy, in_sample_accuracy, calculate_indicators_and_trend
+    return model, mean_accuracy # calculate_indicators_and_trend
 
 
 # trends
 # trends = 0
-# def build_models_for_assets(asset_data_fetchers, timeframes, rsi_period=14, n_splits=5):
-#     """
-#     Builds and evaluates models for multiple assets concurrently.
+def build_models_for_assets(asset_data_fetchers, timeframes, rsi_period=14, n_splits=5):
+    """
+    Builds and evaluates models for multiple assets concurrently.
 
-#     Args:
-#         asset_data_fetchers (dict): Dictionary where keys are asset names and values are data-fetching functions.
-#         timeframes (dict): Dictionary of timeframes for feature generation.
-#         rsi_period (int): RSI calculation period.
-#         n_splits (int): Number of splits for walk-forward validation.
+    Args:
+        asset_data_fetchers (dict): Dictionary where keys are asset names and values are data-fetching functions.
+        timeframes (dict): Dictionary of timeframes for feature generation.
+        rsi_period (int): RSI calculation period.
+        n_splits (int): Number of splits for walk-forward validation.
 
-#     Returns:
-#         dict: A dictionary of models and accuracies per asset.
-#     """
-#     results = {}
+    Returns:
+        dict: A dictionary of models and accuracies per asset.
+    """
+    results = {}
 
-#     def process_asset(asset, fetcher):
-#         # global trends
-#         logger.info(f"Starting model build for {asset}...")
-#         model, accuracy = build_and_evaluate_model(fetcher, timeframes, n_splits)
-#         results[asset] = {"model": model, "accuracy": accuracy}
-#         logger.info(f"Completed model for {asset}: Accuracy = {accuracy:.2f}")
+    def process_asset(asset, fetcher):
+        # global trends
+        logger.info(f"Starting model build for {asset}...")
+        model, accuracy = build_and_evaluate_model(fetcher, timeframes, n_splits)
+        results[asset] = {"model": model, "accuracy": accuracy}
+        logger.info(f"Completed model for {asset}: Accuracy = {accuracy:.2f}")
 
-#         # return trends
+        # return trends
 
-#     threads = []
-#     for asset, fetcher in asset_data_fetchers.items():
-#         thread = threading.Thread(target=process_asset, args=(asset, fetcher))
-#         threads.append(thread)
-#         thread.start()
+    threads = []
+    for asset, fetcher in asset_data_fetchers.items():
+        thread = threading.Thread(target=process_asset, args=(asset, fetcher))
+        threads.append(thread)
+        thread.start()
 
-#     for thread in threads:
-#         thread.join()
+    for thread in threads:
+        thread.join()
 
-#     return results
+    return results
 
 
 
 ##########################################################################################################################
 #                                           OUT-SAMPLE DATA
 ##########################################################################################################################
+
+# fetch out-sample data
+def fetch_current_data(market, timeframe, count, start_pos=0):
+    # utc_from = datetime(2024, 7, 3)
+    # utc_to = datetime(2024, 7, 23)
+
+    # rates = mt5.copy_rates_range("Boom 1000 Index", mt5.TIMEFRAME_D1, utc_from, utc_to)
+    rates = mt5.copy_rates_from_pos(market, timeframe, start_pos, count)
+    df = pd.DataFrame(rates)
+    df['time'] = pd.to_datetime(df['time'], unit='s')
+    df.set_index('time', inplace=True)
+    return df
+
+
+
+# clean data:
+def pred_features(data, timeframes):
+    pred_features = pd.DataFrame(index=data.index)
+    for tf, period in timeframes.items():
+        tf_data = data.resample(tf).last()
+        tf_data = calculate_indicators_and_trend(tf_data) # calculate_indicators_and_trend
+        pred_features[f'{tf}_Trend'] = tf_data['Trend']
+    pred_features.dropna(inplace=True)
+    return pred_features
+
+
+
+def prepare_latest_data(data, model, timeframes):
+    # data = fetch_current_data()
+    features = pred_features(data, timeframes)
+    recent_data = features.iloc[-1].drop('Label', errors='ignore')
+    recent_data_df = pd.DataFrame([recent_data], columns=model.feature_names_in_)
+    return recent_data_df
+
+
+    
+def make_prediction(recent_data_df, model):
+    prediction = model.predict(recent_data_df)
+    return 'Uptrend' if prediction[0] == 1 else 'Downtrend'
 
 
 # main

@@ -149,7 +149,7 @@
 
 
 import MetaTrader5 as mt5
-from BOT.models.model import build_models_for_assets
+from BOT.models.build_assets_models import build_models_for_assets
 from config import config
 from BOT.orders.monitor import monitor_asset
 from BOT.account.setup import open_platfrom, login

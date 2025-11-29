@@ -204,6 +204,60 @@ dedup_filter = DeduplicationFilter()
 file_handler.addFilter(dedup_filter)
 app_log_handler.addFilter(dedup_filter)
 
+
+# added today
+# LOGGER SETUP
+#TODO: Move to a separate file model_report_logger.py
+# ------------------------------------------------------
+def setup_model_report_logger(log_file="logs/multi_asset_model.log"):
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
+
+    logger = logging.getLogger("MultiAssetLogger")
+    logger.setLevel(logging.INFO)
+
+    if logger.hasHandlers():
+        logger.handlers.clear()
+
+    # Console handler (add file handler later if needed)
+    ch = logging.StreamHandler()
+    ch.setFormatter(logging.Formatter("%(message)s"))
+    logger.addHandler(ch)
+
+    return logger
+
+
+logger = setup_model_report_logger()
+
+#TODO: Move to a separate file logger_setup.py
+# ------------------------------------------------------
+# 1. LOGGING UTILITIES
+# ------------------------------------------------------
+def log_table_header():
+    header = (
+        f"| {'Asset':<12} | {'WFV Accuracy':<12} | {'IS Accuracy':<11} | "
+        f"{'Difference':<10} | {'Verdict':<12} |"
+    )
+    separator = "-" * len(header)
+
+    logger.info(separator)
+    logger.info(header)
+    logger.info(separator)
+
+    return separator
+
+#TODO: Move to a separate file model_report_logger.py
+def log_table_row(asset, wfv_acc, is_acc, verdict):
+    diff_pct = (wfv_acc - is_acc) * 100
+
+    row = (
+        f"| {asset:<12} | {wfv_acc:.4f}       | {is_acc:.4f}    "
+        f"| {diff_pct:+.2f}%    | {verdict:<12} |"
+    )
+    logger.info(row)
+
+# new update ends here
+
+
 # --- Create logger ---
 logger = logging.getLogger("algo_logger")
 

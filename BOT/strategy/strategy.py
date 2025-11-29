@@ -1,8 +1,7 @@
-# from ..models import asset_data_fetchers, fetch_current_data, prepare_latest_data, make_prediction, build_models_for_assets, trends, models
 import uuid
 import ta
 import MetaTrader5 as mt5
-from BOT.models.model import fetch_current_data, prepare_latest_data, make_prediction, calculate_indicators_and_trend
+from ..models.model import calculate_indicators_and_trend
 from logger_setup import logger
 # import config
 
